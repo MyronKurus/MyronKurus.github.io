@@ -1,0 +1,25 @@
+a[href*="//"] 
+{
+	color: #f70;
+}
+
+a[target="_blank"]
+{
+	position: relative;
+	white-space: nowrap;
+}
+
+a[target="_blank"]:after
+{
+	content: "\21f1";
+	position: absolute;
+	right: -11px;
+	top: 0;
+	text-decoration: none;
+	display: block;
+}
+
+a[href$="google.com"]
+{
+	color: #666;
+}

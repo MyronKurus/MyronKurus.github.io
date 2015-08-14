@@ -193,3 +193,26 @@ a:hover{
 	height: 16px;
 	border-radius: 9px;
 }
+#features p {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #414042;
+}
+#features {
+	
+}
+#features h1 {
+	color: #414042;
+	font-size: 36px;
+}
+.items div {
+	display:inline-block;
+	width: 162px;
+	line-height: 162px;
+/*	margin-right: 152px;*/
+	background-color: #4bcaff;
+}
+.items {
+	margin:0 25% 0 25%;
+  width:100%;
+}

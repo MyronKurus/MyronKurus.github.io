@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task #3 - Forms</title>
+</head>
+<body>
+<form>
+	<p>Name<br/>
+		<input type="text" name="userName">
+	</p>
+	<p>Email<br/>
+		<input type="text" name="userMail">
+	</p>
+	<p>Sex<br/>
+		<input type="radio" name="sex" value="Male">Male
+		<input type="radio" name="sex" value="Female">Female
+	</p>
+	<p>Status<br/>
+		<input type="checkbox" name="status" value="Student">Student<br/>
+		<input type="checkbox" name="status" value="Employed">Employed<br/>
+		<input type="checkbox" name="status" value="Unemployed">Unemployed
+	</p>
+	<p>Month and Year of birth<br/>
+	<select name="birthDare">
+  	<option value selected="January">January</option>
+  	<option value="March">March</option>
+  	<option value="June">June</option>
+  	<option value="September">September</option>
+	</select>
+	<select>
+  	<option value="1980">1980</option>
+  	<option value selected="1984">1984</option>
+  	<option value="1989">1989</option>
+  	<option value="1993">1993</option>
+	</select>
+	</p>
+	<p>Skills and Technologies<br/>
+   <select name="skills" size="10">
+    <optgroup label="Tech skills">
+     <option value="ts1">HTML</option>
+     <option value="ts2">CSS</option>
+     <option value="ts3">JavaScript</option>
+     <option value="ts4">git</option>
+    </optgroup>
+    <optgroup label="Soft skills">
+     <option value="ss1">Time management</option>
+     <option value="ss2">Proactivity</option>
+     <option value="ss3">Teamwork</option>
+     <option value="ss4">Leadship</option>
+    </optgroup>
+   </select></p>
+   <p>Photo<br/>
+   <input type="file" name="photo">
+	</p>
+	<p>Comment<br/>
+   <textarea rows="4" name="comment"> </textarea>
+	</p>
+	<input type="button" name="save" value="Save">
+	</form>
+</body>
+</html>

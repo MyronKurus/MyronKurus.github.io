@@ -1,0 +1,53 @@
+h1 {
+	text-align: center;
+	color: orange;
+}
+em {
+	color: white;
+	background-color: green;
+}
+p:first-letter {
+	color: red;
+	font-size: 200%;
+}
+#allotment h2 {
+	color: orange;
+}
+#allotment .fruits-list {
+	color: gray;
+}
+#allotment .vegetables-list {
+	color: red;
+}
+
+#warehouse h2 {
+	color: blue;
+}
+ul > li {
+	font-weight: bold;
+}
+/*Верхнє правило, чомусь, вибрало усі елементи <li>, а не виключно елементи ненумераваного списку. Тому довелось прописувати окреме правило для елементів нумерованого списку.*/
+ol > li {
+	font-weight: normal;
+}
+
+#warehouse .fruits-list {
+	color: green;
+}
+#warehouse .vegetables-list {
+	color: red;
+}
+thead tr td, tbody tr {
+	font-weight: bold;
+	text-align: center;
+}
+
+tbody tr{
+	background-color: green;
+	color: white;
+}
+tbody td:nth-child(0n+1) {
+	color: orange;
+	text-align: left;
+	background-color: white;
+}
