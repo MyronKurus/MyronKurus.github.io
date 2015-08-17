@@ -6,10 +6,12 @@
 .clearfix:after {
 	clear: both;
 }
+
 .container{
 	width: 1172px;
 	margin: 0 auto;
 }
+
 a, a:hover{
 	text-decoration: none;
 }
@@ -209,10 +211,11 @@ a:hover{
 	display:inline-block;
 	width: 162px;
 	line-height: 162px;
-/*	margin-right: 152px;*/
+	margin-right: 122px;
 	background-color: #4bcaff;
 }
+/*
 .items {
 	margin:0 25% 0 25%;
   width:100%;
-}
+}*/
