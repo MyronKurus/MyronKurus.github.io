@@ -1,3 +1,4 @@
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
@@ -195,27 +196,60 @@ a:hover{
 	height: 16px;
 	border-radius: 9px;
 }
-#features p {
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
-	color: #414042;
-}
 #features {
-	
+	text-align: center;
 }
-#features h1 {
+.title {
 	color: #414042;
-	font-size: 36px;
+	font-size: 40px;
 }
-.items div {
+.descr {
+	color: #414042;
+	font-size: 20px;
+	margin-top: -20px;
+}
+
+/*.items div {
 	display:inline-block;
 	width: 162px;
 	line-height: 162px;
 	margin-right: 122px;
 	background-color: #4bcaff;
-}
-/*
-.items {
-	margin:0 25% 0 25%;
-  width:100%;
 }*/
+.item {
+	float: left;
+	width: 20%;
+	padding: 0 25px;
+}
+.items-wrap h5 {
+	color: #414042;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.items-wrap p {
+	color: #414042;
+	font-size: 12px;
+	line-height: 20px;
+}
+/*.item img {
+	background: #4bcaff;
+	
+}
+.item img:hover {
+	background: #414042;
+}*/
+.item-images {
+	background: #4bcaff;
+	height: 162px;
+	width: 162px;
+	border-radius: 90px;
+	text-align: center;
+	margin-left: 15%;
+}
+.item-images img {
+	text-align: center;
+	margin-top: 30%;
+}
+.item-images:hover {
+	background: #414042;
+}
