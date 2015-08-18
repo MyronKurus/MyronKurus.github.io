@@ -1,0 +1,28 @@
+header {
+	width: 100%;
+	background-color: #A64DFF;
+	margin-left: -10px;
+	padding-right: 16px;
+	margin-top: -8px;
+}
+nav {
+	width: 900px;
+	margin: auto;
+}
+a {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFDFE;
+	font-size: 14px;
+	padding: 11px 16px;
+	font-family:Impact;
+	font-weight: lighter;
+}
+a:hover {
+	color: #969696;
+	background-color: #EEEEEE;
+}
+.more {
+	float: right;
+}
