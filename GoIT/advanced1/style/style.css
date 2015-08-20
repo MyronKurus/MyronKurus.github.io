@@ -272,7 +272,69 @@ a:hover{
 	margin-top: -20px;
 	text-align: center;
 }
-.gallery-images img {
+.gallery-wrap img {
+	width: 309px;
+	height: 226px;
+	margin-left: -40px;
+}
+.gallery-wrap img:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video {
+	width: 1480px;
+	height: 550px;
+	margin-top: 400px;
+	margin-left: -10px;
+
+	background: url(/img/video-bgr.png);
+}
+#prices{
+	width: 1470px;
+}
+.price-block {
+	width: 1172px;
+	margin: auto;
+}
+#prices .descr {
+	color: #414042;
+	font-size: 20px;
+	margin-top: -20px;
 	text-align: center;
-	margin-top: 30%;
+}
+ .basic, .professional, .advanced {
+	width: 300px;
+	height: 416px;
+	display: inline-block;
+	border: 1px solid #414042;
+	margin-left: 60px;
+	margin: auto;
+}
+.package-descr {
+	text-transform: uppercase;
+	font-size: 22px;
+	text-align: center;
+}
+.price-tag {
+	width: 300px;
+	height: 116px;
+	margin-left: -40px;
+	background-color: #91C46B;
+	font-size: 60px;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+}
+.purchase {
+	width: 170px;
+	height: 50px;
+	border-radius: 2px;
+	font-size: 14px;
+	border: 1px solid #fff;
+	font-family: 'Roboto', sans-serif;
+	background: #2b42a2;
+	color: #ffffff; 
+	text-transform: uppercase;
+	margin-left: 60px;
+	margin-top: 80px;
 }

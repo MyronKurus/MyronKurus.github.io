@@ -1,11 +1,50 @@
-a {
-	display: inline-block;
-	color: #302e33;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.paginator {
+	  width: 390px;
+    padding: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+    background: #ecf0f1;
+		font-family:sans-serif;
+}
+
+.paginator a {
 	text-decoration: none;
-	border-style: solid;
-	border-color: black;
-	border-width: thick;
-} 
-.numb {
-	
+	line-height: 24px;
+  color: #C25EDA;
+  text-align: center;
+  vertical-align: middle;
+	font-weight: bold;
+}
+
+span {
+	vertical-align: bottom;
+}
+
+.num {
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	background: #FAFAFA;
+	display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: #C25EDA;
+  text-decoration: none;
+}
+
+#swchItem, .num:hover {
+  border-radius: 5px;
+	border: 1px solid #7C12BC;
+	color: #fff;
+	background: #C25EDA;
+}
+.icon {
+	font-size: 15px;
+	vertical-align: baseline;
 }

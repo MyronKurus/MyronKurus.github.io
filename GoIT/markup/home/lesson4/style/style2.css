@@ -23,6 +23,6 @@ a:hover {
 	color: #969696;
 	background-color: #EEEEEE;
 }
-.more {
+a:last-child {
 	float: right;
 }
