@@ -22,22 +22,22 @@ span {
 .blue {
 	background-color: blue;
 }
-#red:not(:checked) ~ .red {
+#red:checked ~ .red {
   display:none;
 }
-#green:not(:checked) ~ .green {
+#green:checked ~ .green {
   display:none;
 }
-#blue:not(:checked) ~ .blue {
+#blue:checked ~ .blue {
   display:none;
 }
-#red:not(:checked) ~ label[for="red"]{
+#red:checked ~ label[for="red"]{
     color: rgba(255,0,0, 0.4);
 }
-#green:not(:checked) ~ label[for="green"]{
+#green:checked ~ label[for="green"]{
     color: rgba(0,255,0, 0.4);
 }
-#blue:not(:checked) ~ label[for="blue"]{
+#blue:checked ~ label[for="blue"]{
     color: rgba(0,0,255, 0.4);
 }
 label[for="red"] {
