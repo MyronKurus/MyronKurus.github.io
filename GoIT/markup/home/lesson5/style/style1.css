@@ -54,3 +54,6 @@ li a:hover {
 	margin: 0 auto;
 	list-style: none;
 }
+.drop-list li {
+	margin-left: -10px;
+}
