@@ -1,24 +1,30 @@
+.content {
+	width: 884px;
+	margin: 0 auto;
+}
 .container {
 	width: 288px;
-	border: 5px solid #EE8129;
 	color: #35495A;
-	border-radius: 4px;
 	font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
+	display: inline-block;
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
 }
 h2 {
 	text-transform: uppercase;
 	font-family: sans-serif;
+	text-align: center;
+	color: #35495A;
 }
 .header p {
 	color: #FFFFFF; 
 	text-align: center;
 	margin: 20px auto;
 }
-.header {
+.header  {
 	background: #EE8129;
 	border: 2px solid #EE8129;
 }
-
 p {
 	text-align: center;
 	text-transform: uppercase;
@@ -52,7 +58,6 @@ ul li {
 h1 {
 	font-size: 45px;
 }
-
 sub, sup {
 	font-size: 18px
 }
@@ -64,7 +69,7 @@ sup {
 }
 button {
 	width: 256px;
-	margin: -5px 18px 30px;
+	margin: -5px 15px 20px;
 	text-transform: uppercase; 
 	padding: 12px 0;
 	color: #FFFFFF;
@@ -75,9 +80,43 @@ button {
 	cursor: pointer;
 }
 .shadow {
-   box-shadow: 0 0 10px 5px rgba(56, 121, 157, 0.9);
+   box-shadow: 0 0 10px 5px rgba(72, 109, 232, 0.9);
 }
 button:hover{
 	box-shadow: 0 3px 3px 3px rgb(179,86,11);
 	color: #c6c6c6;
-}        
+}
+.standart .header {
+	background: #2BC2D5;
+	border: 1px solid #2BC2D5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.ultimate .header {
+	background: #00B89A;
+	border: 1px solid #00B89A;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+} 
+.best {
+	border: 5px solid #EE8129;
+}
+.standart button, .ultimate button {
+	background: #2F70A8;
+}
+.standart button:hover, .ultimate button:hover {
+	box-shadow: 0 3px 3px 3px rgb(19,66,107);
+}
+.best button {
+	margin-bottom: 32px;
+}
+.best .header p {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.best {
+	margin: 0 -2px;
+}
+.standart{
+	margin: 0 auto;
+}
