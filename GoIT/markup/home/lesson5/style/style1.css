@@ -29,26 +29,28 @@ li a:hover {
 	color: #9FA0B4;
 	background-color: #EEEEEE;
 }
-
-#navigation li:hover > ul {
+#navigation li:hover > .dropdown {
 	display: inline-block;
 } 
 .dropdown {
+	width: 100%;
 	display: none;
 	background-color: #EEEEEE;
 	margin: 0 auto;
-	left: 160px;
 	position: absolute;
 	top: 39px;
 	left: 0; 
 	right: 0;
 }
-
 .dropdown li a{
-	float: left;
 	color: #9FA0B4;
-	margin-left: -5px;
+/*	margin-left: -5px;*/
 	padding-bottom: 10px;
 	font-family: sans-serif;
 	text-transform: none;
+}
+.drop-list {
+	width: 900px;
+	margin: 0 auto;
+	list-style: none;
 }
