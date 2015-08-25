@@ -22,6 +22,7 @@ a {
 	padding: 11px 16px;
 	font-family: Impact;
 	font-weight: normal;
+	position: static;
 }
 
 li a:hover {
@@ -29,23 +30,18 @@ li a:hover {
 	background-color: #EEEEEE;
 }
 
-.dropdown li {
-	list-style: none;
-}
-
-.dropdown {
-	display: none;
-}
-
 #navigation li:hover > ul {
 	display: inline-block;
 } 
 .dropdown {
+	display: none;
 	background-color: #EEEEEE;
 	margin: 0 auto;
-	float:inherit;
-	position: absolute;
 	left: 160px;
+	position: absolute;
+	top: 39px;
+	left: 0; 
+	right: 0;
 }
 
 .dropdown li a{
