@@ -1,0 +1,93 @@
+body {
+	width: 1400px;
+}
+
+.container {
+	height: 60px;
+	width: 1022px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.logo {
+	float: left;
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	color: #EE8129;
+	font-weight: lighter;
+	font-size: 28px;
+	margin-top: 10px;
+}
+span {
+	font-weight: bold;
+	color: #3070A8;
+}
+ul {
+	float: right;
+}
+ul li {
+	display: inline-block;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 40px;
+	color: #989898;
+	font-family: 'Open Sans', sans-serif;
+}
+a:hover {
+	color: #3070A8;
+	border-bottom: 2px solid #3070A8;
+}
+#banner {
+	width: 1400px;
+	height: 585px;
+	background-image: url(/img/laptop.png);
+	background-repeat: no-repeat;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+p, h2, h4, button {
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 0.3em;
+}
+p {
+	padding-top: 160px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+}
+h2 {
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+}
+h4 {
+	margin-top: 30px;
+	font-style: italic;
+	font-size: 18px;
+	font-weight: normal;
+}
+button {
+	width: 248px;
+	height: 60px;
+	background: none;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+}
+.but{
+	padding-top: 30px;
+	width: 248px;
+	height: 60px;
+	margin: 0 auto;
+}
+button:hover {
+	cursor: pointer;
+	color: #48a9ff;
+	background: rgba(98, 98, 98, 0.4);
+	box-shadow: 0 3px 3px 3px #989898;
+}
