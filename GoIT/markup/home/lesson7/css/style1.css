@@ -1,37 +1,48 @@
 body {
-	padding: 50px;
+	padding-left: 50px;
 }
-
 .sivtsev {
+	text-align: justify;
 	position: relative;	
 	width: 400px;
 	font-family: arial, sans-serif;
 	font-size: 90px;
-	text-align: justify;
 	-moz-text-align-last: justify;
-	text-align-last: justify;	
+	text-align-last: justify;
 	color: rgba(0,0,0,0);
 	text-shadow: 0 0 3px #555555;
+	text-shadow: #555555 0px 0px 3px 1px; /*FOR IE 10+*/
+	line-height: 8px;
 }
-
+p {
+  text-align: justify;
+}
+p::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
 .uline {
-	border: solid 0.5px #FFCCCB;	
+    border-bottom: 2px solid;
+    border-color: rgba(255, 0, 0, 0.2);
+    position: relative;
+    top: -5px;
 }
 
 .sight02 {
-	font-size: calc(1em - 1em/12)
+	font-size: calc(1em - 1em/12);
 }
 
 .sight03 {
-	font-size: calc(1em - 2em/12)
+	font-size: calc(1em - 2em/12);
 }
 
 .sight04 {
-	font-size: calc(1em - 3em/12)
+	font-size: calc(1em - 3em/12);
 }
 
 .sight05 {
-	font-size: calc(1em - 4em/12)
+	font-size: calc(1em - 4em/12);
 }
 
 .sight06 {
@@ -43,21 +54,21 @@ body {
 }
 
 .sight08 {
-	font-size: calc(1em - 7.5em/12)
+	font-size: calc(1em - 7.5em/12);
 }
 
 .sight09 {
-	font-size: calc(1em - 9em/12)
+	font-size: calc(1em - 9em/12);
 }
 
 .sight10 {
-	font-size: calc(1em - 10em/12)
+	font-size: calc(1em - 10em/12);
 }
 
 .sight15 {
-	font-size: calc(1em - 10.5em/12)
+	font-size: calc(1em - 10.5em/12);
 }
 
 .sight20 {
-	font-size: calc(1em - 11em/12)
+	font-size: calc(1em - 11em/12);
 }
