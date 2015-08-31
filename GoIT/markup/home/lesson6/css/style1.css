@@ -9,6 +9,7 @@
 	display: inline-block;
 	border: 1px solid #c6c6c6;
 	border-radius: 5px;
+	position: relative;
 }
 h2 {
 	text-transform: uppercase;
@@ -80,10 +81,10 @@ button {
 	cursor: pointer;
 }
 .shadow {
-   box-shadow: 0 0 10px 5px rgba(72, 109, 232, 0.9);
+   box-shadow: 0 0 10px 3px rgba(72, 105, 247, 0.9);
 }
 button:hover{
-	box-shadow: 0 3px 3px 3px rgb(179,86,11);
+	box-shadow: 0 2px 2px 0px rgb(179,86,11);
 	color: #c6c6c6;
 }
 .standart .header {
@@ -99,13 +100,15 @@ button:hover{
 	border-top-right-radius: 5px;
 } 
 .best {
+	margin: 0 -5px;
 	border: 5px solid #EE8129;
+	z-index: 2;
 }
 .standart button, .ultimate button {
 	background: #2F70A8;
 }
 .standart button:hover, .ultimate button:hover {
-	box-shadow: 0 3px 3px 3px rgb(19,66,107);
+	box-shadow: 0 2px 2px 0px rgb(19,66,107);
 }
 .best button {
 	margin-bottom: 32px;
@@ -114,9 +117,11 @@ button:hover{
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
-.best {
-	margin: 0 -2px;
+.standart {
+	margin-right: -2px;
+	z-index: 1;
 }
-.standart{
-	margin: 0 auto;
+.ultimate {
+	margin-left: -2px;
+	z-index: 1;
 }
