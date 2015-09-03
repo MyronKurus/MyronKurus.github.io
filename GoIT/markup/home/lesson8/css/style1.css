@@ -1,0 +1,44 @@
+div.arrow {
+  width: 55%;
+  height: 45px;
+	margin: 50px auto;
+	padding: 5px;
+  min-width: 500px;
+	background: #FFCD5D;
+  display: block;
+  position: relative;
+}
+
+div.arrow:after {
+  content: "";
+ 	position: absolute;
+  left: 100%;
+  top: 0;
+  border: 28px solid transparent;
+  border-left: 15px solid #FFCD5D;
+}
+
+ .text input {
+   margin: 0;
+   padding: 0;
+	 width: 83%;
+   background: #FFFFFF;
+   height: 24px;
+ }
+
+button {
+	width: 75px;
+  height: 28px;
+  font-size: 15px;
+	vertical-align: top;
+  border: 1px solid #777777;
+  border-radius: 3px;
+  margin-left: 1px;
+  padding: 0; 
+}
+
+label {
+	margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
