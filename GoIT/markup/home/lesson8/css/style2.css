@@ -38,6 +38,15 @@ button {
   border-radius: 3px;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+    font-weight: bold;
+    border-color: #c6c6c6;
+}
+
 p {
   font-family: Arial, san-serif;
   font-size: 13px;

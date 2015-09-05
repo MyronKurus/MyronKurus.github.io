@@ -1,6 +1,9 @@
 body {
+	margin: 0 auto;
+/*	text-align: center;*/
 	width: 1400px;
 	margin-left: 0px;
+	min-width: 1026px;
 }
 
 .container {
@@ -39,6 +42,7 @@ a {
 	font-family: 'Open Sans', sans-serif;
 }
 a:hover {
+	padding-bottom: 50px;
 	color: #3070A8;
 	border-bottom: 2px solid #3070A8;
 }
@@ -97,8 +101,8 @@ h4 {
 button:hover {
 	cursor: pointer;
 	color: #48a9ff;
-	background: rgba(98, 98, 98, 0.4);
-	box-shadow: 0 3px 3px 3px #989898;
+	background: rgba(98, 98, 98, 0.2);
+	box-shadow: 0 1px 1px 1px #989898;
 }
 .serv-content {
 	margin: 0 auto;
@@ -189,13 +193,15 @@ button:hover {
 	font-weight: 500;
 	font-size: 22px;
 	color: #3F4042;
-	padding-top: 20px
+	margin: 18px 0;
 }
-.price-tag {
-	color: red;
-/*	font-size: 80px;*/
-/*	margin: 10px 0;*/
-/*	font-weight: bolder;*/
+.pricing .price-tag {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	color: #35495A;
 }
 .price-box li:nth-child(odd) {
 	background-color: #EDF5FD;
@@ -204,9 +210,10 @@ button:hover {
 	background-color: #F5F5F6;
 }
 .price-box ul {
-	width: 80%;
+	font-family: "Trebuchet MS", sans-serif;
+	width: 75%;
 	float: left;
-	margin: 0 10px 20px; 
+	margin: 20px 15px 4px; 
 	color: #888C94;
 	list-style-image: url(../img/marker.png);
 	list-style-position: inside;
@@ -227,21 +234,20 @@ sup {
 }
 .price-box button {
 	width: 256px;
-	margin: 15px 15px 20px;
+	margin: 15px 15px 22px;
 	text-transform: uppercase; 
-	padding: 16px 0;
+	padding: 11px 0;
 	color: #FFFFFF;
 	background: #EE8129;
-	font-weight: bold;
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
 }
 .shadow {
-   box-shadow: 0 0 10px 5px rgba(72, 109, 232, 0.9);
+   box-shadow: 0 0 5px 2px rgba(92, 105, 145, 0.6);
 }
 .price-box button:hover{
-	box-shadow: 0 3px 3px 3px rgb(179,86,11);
+	box-shadow: 0 1px 1px 1px rgb(179,86,11);
 	color: #c6c6c6;
 }
 .standart .header-box {
@@ -263,7 +269,7 @@ sup {
 	background: #2F70A8;
 }
 .standart button:hover, .ultimate button:hover {
-	box-shadow: 0 3px 3px 3px rgb(19,66,107);
+	box-shadow: 0 1px 1px 1px rgb(19,66,107);
 }
 .best button {
 	margin-bottom: 32px;
@@ -271,10 +277,8 @@ sup {
 .header-box p {
 	color: #FFFFFF; 
 	text-align: center;
-	margin: 20px auto;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	font-weight: bold;
+	margin: 17px 0 16px;
+	font-size: 22px;
 }
 .best {
 	position: relative;
@@ -283,11 +287,11 @@ sup {
 }
 
 .standart {
-margin-right: -3px;	
+	margin-right: -3px;	
 	z-index: 1;
 }
 .ultimate {
-margin-left: -3px;
+	margin-left: -3px;
 	z-index: 1;
 }
 .testimonials {
@@ -356,7 +360,7 @@ margin-left: -3px;
   border-right: 16px solid white;
   border-bottom: 12px solid transparent;
 	position: absolute;
-	top: 2760px;
+	top: 2722px;
 }
 .left {
 	left: 298px;
@@ -388,15 +392,15 @@ margin-left: -3px;
 }
 .point {
 	left: 193px;
-	top: 2925px;
+	top: 2880px;
 }
 .cell {
 	left: 193px;
-	top: 3065px;
+	top: 3020px;
 }
 .letter {
 	left: 190px;
-	top: 3104px;
+	top: 3059px;
 }
 .social-networks {
 	padding-top: 100px;
@@ -407,8 +411,6 @@ margin-left: -3px;
 	display: inline-block;
 	margin-left: -3px;
 	width: 705px;
-	background-image: url(../img/map.png);
-	background-repeat: no-repeat;
 	height: 345px;
 }
 footer {

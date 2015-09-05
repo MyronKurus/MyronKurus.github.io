@@ -37,6 +37,15 @@ button {
   padding: 0; 
 }
 
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+  font-weight: bold;
+  border-color: #c6c6c6;
+}
+
 label {
 	margin: 0;
   padding: 0;
