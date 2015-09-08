@@ -1,10 +1,14 @@
 body {
-	width: 1600px;
-	margin: 0 auto;
+/*	width: 1600px;*/
+/*	margin: 0 auto;*/
+	width: 100%;
+  margin: 0;
+  padding: 0;
 	text-align: center;
+  background-color: #f9f9f9;
 }
 .content {
-	width: 1142px;
+/*	width: 1142px;*/
 	margin: 0 auto;
 	min-width: 260px;
 }
@@ -12,11 +16,12 @@ body {
 	width: 360px;
 	height: 260px;
 	display: inline-block;
-	margin: 13px 0;
+	margin: 13px;
 	background: rgba(40, 180, 247, 0.9);
 	border-radius: 5px;
 }
 .picture {
+	display: inline-block;
 	width: 360px;
 	height: 260px;
 	border-radius: 5px;
@@ -25,9 +30,7 @@ body {
 .item:hover .picture {
   opacity: 0.3;
 }
-.center {
-	margin: 13px 26px;
-}
+
 .icons {
   position: relative;
   bottom: 55%;
@@ -58,12 +61,4 @@ h2 {
 p {
 	color: #909090;
 	margin-bottom: 60px;
-}
-@media screen and (max-width:1140px) {
-	.content {width: 780px;}
-	.item {margin: 0 13px;}
-}
-@media screen and (max-width:800px) {
-	.content {width: 360px;}
-	.item {margin: 15px;}
 }
