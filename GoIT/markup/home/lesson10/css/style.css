@@ -1,0 +1,66 @@
+body {
+	width: 1600px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content {
+	width: 1142px;
+	margin: 0 auto;
+	min-width: 260px;
+}
+.item {
+	width: 360px;
+	height: 260px;
+	display: inline-block;
+	margin: 13px 0;
+	background: rgba(40, 180, 247, 0.9);
+	border-radius: 5px;
+}
+.picture {
+	width: 360px;
+	height: 260px;
+	border-radius: 5px;
+	transition: 0.7s;
+}
+.item:hover .picture {
+  opacity: 0.3;
+}
+.center {
+	margin: 13px 26px;
+}
+.icons {
+  position: relative;
+  bottom: 55%;
+  left: 0;
+  display: inline-block;
+}
+.zoom, .link {
+	display: none;
+	width: 40px;
+  height: 40px;
+  margin: -15px 3px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 2px;
+}
+.item:hover .zoom, .item:hover .link {
+	display: inline-block;
+}
+h2, p {
+	font-family: "Trebuchet MS", sans-serif;
+}
+h2 {
+	color: #2D3950;
+}
+p {
+	color: #909090;
+	margin-bottom: 60px;
+}
+@media screen and (max-width:1140px) {
+	.content {width: 780px;}
+	.item {margin: 0 13px;}
+}
+@media screen and (max-width:800px) {
+	.content {width: 360px;}
+	.item {margin: 15px;}
+}
