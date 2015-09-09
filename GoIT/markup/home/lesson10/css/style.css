@@ -15,7 +15,7 @@ body {
 	width: 360px;
 	height: 260px;
 	display: inline-block;
-	margin: 13px 0;
+	margin: 13px;
 	background: rgba(40, 180, 247, 0.9);
 	border-radius: 5px;
 }
@@ -60,7 +60,7 @@ p {
 	color: #909090;
 	margin-bottom: 60px;
 }
-@media screen and (max-width:1142px) {
+@media screen and (max-width:1170px) {
 	.content {width: 780px;}
 	.item {margin: 0 13px;}
 }
