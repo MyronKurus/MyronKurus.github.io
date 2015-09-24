@@ -802,13 +802,3 @@ span.light-orange {
     margin-top: 99px;
     cursor: pointer;
 }
-.footer:after {
-    content: "";
-    position: absolute;
-    width: 969px;
-    margin: -4px auto;
-    margin-left: -18px;
-    background-color: #fff;
-    border-bottom: 1px solid #ececec;
-    z-index: 1;
-}
