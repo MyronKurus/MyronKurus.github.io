@@ -14,14 +14,27 @@ body {
     content: "";
     position: absolute;
     width: 969px;
-    height: 1105px;
-    margin: -1102px auto;
+    height: 1115px;
+    margin: -1107px auto;
     background-color: #fff;
     border: 1px solid;
     border-color: #ececec;
     border-radius: 5px;
     z-index: -1;
 }
+
+.wrapper:before {
+    content: "";
+    position: absolute;
+    width: 969px;
+    margin-top: 1385px;
+    background-color: #fff;
+    border-bottom: 1px solid;
+    border-color: #ececec;
+    border-radius: 5px;
+    z-index: 0;
+}
+
 /*NAVIGATION*/
 
 .logo {
@@ -725,7 +738,7 @@ h4 {
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
     box-shadow: 5px 5px 20px #000;
-    margin-top: -10px;
+    margin-top: -3px;
     margin-left: 630px;
     z-index: -1;
 }
@@ -738,7 +751,7 @@ h4 {
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg);
     box-shadow: 5px 5px 20px #000;
-    margin-top: -10px;
+    margin-top: -3px;
     margin-left: 10px;
     z-index: -1;
     margin-bottom: 80px;
@@ -802,3 +815,4 @@ span.light-orange {
     margin-top: 99px;
     cursor: pointer;
 }
+
