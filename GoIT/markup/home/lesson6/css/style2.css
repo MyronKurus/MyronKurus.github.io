@@ -6,6 +6,7 @@ body {
 	margin: 0 auto;
 }
 .content {
+	max-width: 99%;
 	width: 1024px;
 	height: 98px;
 	margin: 0 auto;
@@ -26,6 +27,7 @@ h1 {
 
 .testimonial {
   display: inline-block;
+	margin: 0 auto;
 }
 
 img {
@@ -55,8 +57,8 @@ img {
   right: 100%;
 }
 
-.man {
-	margin-left: 48px;
+.left {
+	margin-right: 48px;
 }
 
 h5 {
