@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task #5</title>
+</head>
+
+<body>
+    <script>
+        function chessBoard(x, y) {
+            for (i = 0; i < y; i++) {
+                if (i % 2 !== 0) {
+                    for (j = 0; j < x; j++) {
+                        if (j % 2 !== 0) {
+                            document.write('#');
+                        } else {
+                            document.write('&nbsp');
+                        }
+                    }
+                } else {
+                    for (j = 0; j < x; j++) {
+                        if (j % 2 === 0) {
+                            document.write('#');
+                        } else {
+                            document.write('&nbsp');
+                        }
+                    }
+                }
+                document.write('<br/>');
+            }
+        }
+        chessBoard(8, 8);
+    </script>
+</body>
+
+</html>

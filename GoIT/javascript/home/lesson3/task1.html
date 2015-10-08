@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task #1</title>
+</head>
+
+<body>
+    <script>
+        var num;
+        do {
+            num = prompt('Enter number, please, more than 100:');
+            if (num === null) {
+                alert('You have canceled operatoin.');
+                break;
+            }
+        } while (num <= 100);
+
+        if (num >= 101) {
+            alert('Congrats!!! You have entered right number.');
+        }
+    </script>
+</body>
+
+</html>

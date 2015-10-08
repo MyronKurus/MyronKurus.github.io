@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task #3</title>
+</head>
+
+<body>
+    <script>
+        function fizzBizz(x, y) {
+            var fizz = 'Fizz',
+                buzz = 'Buzz';
+            for (var i = x; i <= y; i++) {
+                if (!(i % 3)) {
+                    document.write('i = ' + i + ' - ' + fizz + '<br>');
+                } else if (!(i % 5)) {
+                    document.write('i = ' + i + ' - ' + buzz + '<br>');
+                } else {
+                    document.writeln('i = ' + i + '<br>');
+                }
+            }
+        }
+        fizzBizz(1, 100);
+    </script>
+</body>
+
+</html>
