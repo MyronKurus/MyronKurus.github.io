@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task #1</title>
+</head>
+
+<body>
+    <script>
+        function fibonacci(n) {
+            var temp;
+
+            if (n >= 2) {
+                temp = fibonacci(n - 1) + fibonacci(n - 2);
+            } else {
+                temp = n;
+            }
+            return temp;
+        }
+				var num = prompt('Enter Fibonacci number, please:');
+        alert(fibonacci(num));
+    </script>
+</body>
+
+</html>
