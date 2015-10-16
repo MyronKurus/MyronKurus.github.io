@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task #1</title>
+</head>
+
+<body>
+    <script>
+        var tasksCompleted = {
+            'Anna': 29,
+            'Serg': 35,
+            'Elena': 1,
+            'Anton': 99
+        };
+
+        function theBestWorker(obj) {
+            var temp = 0;
+            for (var key in obj) {
+                if (obj[key] > temp) {
+                    temp = obj[key];
+                }
+            }
+            return key + ': ' + temp;
+        }
+
+        document.write(theBestWorker(tasksCompleted));
+    </script>
+</body>
+
+</html>

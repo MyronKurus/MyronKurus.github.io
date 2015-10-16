@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task #7</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
+        function anClean(arr) {
+            var clean = {},
+                temp = [];
+            for (var i = 0; i < arr.length; i++) {
+                var word = arr[i].toLowerCase().split("").sort().join("");
+                clean[word] = arr[i];
+            }
+            for (var elem in clean) {
+                temp.push(clean[elem]);
+            }
+            return temp;
+        }
+        console.log(anClean(arr)); // 'воз,киборг,корсет' или 'ЗОВ,гробик,сектор'
+    </script>
+
+</body>
+
+</html>

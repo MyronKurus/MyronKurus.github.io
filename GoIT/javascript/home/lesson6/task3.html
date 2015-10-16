@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task #3</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        arr.sort(function(a, b) {
+            var random = arr.map(Math.random)
+            console.dir(random);
+            return random[a] - random[b];
+        });
+        console.log(arr);
+    </script>
+
+</body>
+
+</html>
