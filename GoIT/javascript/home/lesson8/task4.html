@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task #4</title>
+</head>
+<body>
+	 <script>
+        function Article() {
+            this.created = new Date();
+            Article.count++;
+            Article.last = this.created;
+        }
+        Article.showStats = function () {
+            console.log('Всьго: ' + this.count + ', Остання: ' + this.last);
+        };
+        Article.count = 0;
+        new Article();
+        new Article();
+        new Article();
+        new Article();
+        Article.showStats();
+    </script>
+</body>
+</html>
