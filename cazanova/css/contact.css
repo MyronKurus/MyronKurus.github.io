@@ -1,0 +1,56 @@
+body {
+  font-size: 15px;
+  background: #fcfcf6;
+  color: #000000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.6;
+}
+.content {
+/*    border-top: 1px, solid, black;*/
+    /*background-image: url(../images/wrmain1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+*/
+    margin-top: -30px;
+    height: 564px;
+}
+.contact-information,.map {
+    width: 100%;
+    height: 50%;
+}
+.contact-information {
+    padding-left: 80px;
+    padding-top: 7px;
+    line-height: 1.1em;
+    text-align: center;
+}
+.social-nw img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+.social-nw {
+    width: 340px;
+    margin: 0 auto;
+}
+.social-nw a {
+    padding: 0 0 10px 0;
+    display: inline-block;
+    margin: 0;
+    
+}
+.social-nw a:hover {
+    border: none;
+} 
+.tel {
+    color: #d3a352;
+    font-weight: 500;
+} 
+h2 {
+    text-transform: uppercase;
+}

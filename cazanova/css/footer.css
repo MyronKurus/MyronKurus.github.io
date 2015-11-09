@@ -1,0 +1,40 @@
+footer {
+    background-color: #2D2D2B;
+    color: #C19B65;
+}
+.social-links {
+    width: 140px;
+    font-weight: 100;
+}
+.adress {
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.social-links, .adress {
+    display: inline-block;    
+} 
+.social-links {
+    float: left;
+}
+
+.adress span {
+    margin-right: 40px;
+    float: right;
+    font-weight: 100;
+}
+.social-links li {
+    margin: 0;
+    padding: 0;
+} 
+
+footer a:hover {
+    text-decoration: none;
+    border: none;
+}
+.social-links img{
+    width: 16px;
+    height: 16px;
+}
