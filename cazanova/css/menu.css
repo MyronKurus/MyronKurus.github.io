@@ -100,3 +100,6 @@ a:hover {
     background-size: contain;
     padding-top: 30px;
 }
+a: actve, a:visited {
+    text-decoration-line: none;
+}
