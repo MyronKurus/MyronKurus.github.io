@@ -10,9 +10,10 @@ body {
   line-height: 1.6;
 }
 .content {
-    background-image: url(../images/wrmain1.jpg);
-    background-position: center;
+    background-image: url(../images/main.jpg);
+    background-position: left;
     background-repeat: no-repeat;
+    background-size: auto;
     margin-top: -7px;
     height: 564px;
 }

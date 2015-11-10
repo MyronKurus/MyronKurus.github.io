@@ -26,13 +26,14 @@ li {
 .dropdown {
 	width: 100%;
     display: none;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.8);
 	margin: 0 auto;
 	position: absolute;
-	top: 84px;
+	top: 83px;
 	left: 0; 
 	right: 0;
     height: 60px;
+    z-index: 101;
 }
 
 a {
@@ -73,6 +74,7 @@ a:hover {
 
 .drop-list a {
     color: #FFFFFF;
+    z-index: 101;
 }
 
 .drop-list a:hover {
@@ -86,6 +88,7 @@ a:hover {
     margin: 0 auto;
 /*    height: 100%;*/
     width: 800px;
+     z-index: 101;
 }
 .logo {
     color: #fcfcf6;
@@ -95,7 +98,7 @@ a:hover {
     height: 80px;
     margin: 0 auto;
     background-image: url(../images/logo.png);
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 30px;
