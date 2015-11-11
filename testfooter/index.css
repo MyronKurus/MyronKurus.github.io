@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    background: #fcfcf6;
+    color: #000000;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    min-height: 100%;
+    width: 100%;
+    line-height: 1.6;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    width: 100%;
+    /*    padding: 30px;*/
+    background: #FFFCDE;
+}
+
+.langs,
+.top-menu,
+li {
+    display: inline-block
+}
+
+.dropdown {
+    display: none;
+}
+
+.langs-inline {
+    padding: 0 50px;
+}
+
+.top-menu {
+    width: 80%;
+    /*    margin: 0 auto;*/
+    margin-left: 15px;
+}
+
+a:actve,
+a:visited {
+    text-decoration-line: none;
+}
+
+.header li.cont {
+    /*    float: right;*/
+    margin-left: 80px;
+    padding: 0;
+}
+
+.active {
+    color: #d3a352;
+}
+
+.langs-inline li a {
+    border-top: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.menu-items li {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+a:hover {
+    color: #d3a352;
+    transition: color 0.7s ease;
+    text-decoration: none;
+    border: 1px solid #d3a352;
+    border-left: none;
+    border-right: none;
+}
+
+.logo:hover {
+    border: none;
+}
+
+.drop-list a {
+    color: #FFFFFF;
+    z-index: 101;
+}
+
+.drop-list a:hover {
+    color: #d3a352;
+    transition: color 0.7s linear;
+    text-decoration: none;
+    border: none;
+}
+
+.drop-list {
+    display: table;
+    margin: 0 auto;
+    width: 900px;
+    z-index: 101;
+}
+
+li:hover .dropdown {
+    display: inline-block;
+}
+
+.dropdown {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 101;
+}
+
+.menu-items li {
+    padding-bottom: 20px;
+}
+
+.menu-items li .logo {
+    color: #fcfcf6;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 220px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url(cazanova_main_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+}
+
+.content {
+    margin-top: -6px;
+    padding-bottom: 90px;
+    /*    min-height: 80%*/
+    background-image: url(main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 582px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*  height: 80px;*/
+    padding: 10px 0;
+}
+
+.drop-list li {
+    margin-top: 20px;
+}

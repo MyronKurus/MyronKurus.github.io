@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    outline: none;
+   /*position: relative;
+     outline: none;
+    line-height: 1;
+*/
+
+}
+body {
+  font-size: 15px;
+  background: #fcfcf6;
+  color: #000000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.6;
+}
+.content {
+    background: rgba(0,0,0);
+    margin-top: -6px;
+    height: 564px;
+}
+.dishes, .bar, .vine, .cocktails {
+    height: 564px;
+    width: 24.78%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.dishes {
+    background-image: url(../images/menu1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.bar {
+    background-image: url(../images/menu2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.vine {
+    background-image: url(../images/menu3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cocktails {
+    background-image: url(../images/menu4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-link {
+     background: rgba(0,0,0,.7);
+    height: 564px;
+}
+
+.content div:hover {
+    opacity: 0;
+  transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+}
+.content a:hover {
+    border: none;
+}
+.content a span {
+    bottom: 30px;
+    color: #fff;
+    border: none;
+    position: relative;
+}
+.content a {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content a:hover .title {
+    bottom: 300px;
+    font-weight: 700;
+/*    font-size: 22px;*/
+    transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+}
+.title:hover ~ .content div {
+       opacity: 0;
+  transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+}
+

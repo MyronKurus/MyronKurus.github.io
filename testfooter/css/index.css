@@ -1,0 +1,19 @@
+body {
+  font-size: 15px;
+  background: #fcfcf6;
+  color: #000000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.6;
+}
+.content {
+    background-image: url(../images/main.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: -7px;
+    height: 564px;
+}
