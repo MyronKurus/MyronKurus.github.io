@@ -40,14 +40,15 @@ ul {
 li {
     display: inline-block
 }
+.langs-inline {
+    padding: 0 50px;
+}
+
 
 .dropdown {
     display: none;
 }
 
-.langs-inline {
-    padding: 0 50px;
-}
 
 .top-menu {
     width: 80%;
