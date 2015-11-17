@@ -6,7 +6,6 @@ ul {
     color: #333;
     font-size: 13px;
     padding: 20px;
-    /*  margin: 10px 0;*/
 }
 
 #responsive-menu .navbar-nav a {
@@ -45,7 +44,6 @@ ul {
     margin: 0;
 }
 
-.navbar-right {}
 
 #responsive-menu .navbar-left li,
 #responsive-menu .navbar-right li {
@@ -67,12 +65,12 @@ ul {
 }
 
 .sub-menu li {
-    display: inline;
+    display: inline-block;
     position: absolute;
 }
 
 #responsive-menu .sub-menu a {
-    color: #FFFFFF;
+    color: #FFF;
     margin: 0 10px;
 }
 
@@ -81,23 +79,29 @@ ul {
     transition: color 0.7s linear;
     text-decoration: none;
     border: none;
+  background: none;
 }
 
-.navbar-nav li:hover .sub-menu {
+.dropdown-menu {
+  background: transparent;
+  border: none;
+}
+#responsive-menu .navbar-nav li:hover .sub-menu {
     transform: rotateY(0deg);
     opacity: 1;
     transition: all 0.7s linear;
     -webkit-transition: all 0.7s linear;
 }
 
-.sub-menu {
+#responsive-menu .navbar-nav .sub-menu {
     position: absolute;
     height: 0px;
     opacity: 0;
     transform: rotateY(90deg);
     width: 800px;
-    margin: 44px auto;
-    z-index: 101;
+    margin: 10px auto;
+    border: none;
+    box-shadow: none;
 }
 
 .navbar li {
@@ -105,13 +109,15 @@ ul {
 }
 
 .sub-menu li:first-child {
-    margin-left: -35px;
+    margin-left: 15px;
 }
 
 #responsive-menu .active-lang a {
     color: #d3a352;
 }
-
+#responsive-menu .navbar-nav .dropdown-toggle {
+    background: none;
+  }
 #responsive-menu .navbar-nav #logo {
     color: #fcfcf6;
     text-indent: -9999px;
@@ -146,6 +152,17 @@ ul {
     }
 }
 
+
+@media screen and (max-width: 1980px) {
+    
+  #responsive-menu .dropdown-toggle span {
+    display: none;
+  }
+}
+
+
+
+/*///.................991px.................///*/
 @media screen and (max-width: 991px) {
     #responsive-menu .navbar-nav .menu-item {
         padding: 20px 5px;
@@ -165,6 +182,8 @@ ul {
     }
 }
 
+
+/*///.................767px.................///*/
 @media screen and (max-width: 767px) {
     .navbar-header #logo1 {
         display: inline-block;
@@ -210,38 +229,55 @@ ul {
     .navbar-nav li:hover .nav-child-wrapper {
         display: none;
     }
-/*
-    #responsive-menu .sub-menu a {
-        color: #333;
-        margin: 0 10px;
-        display: table;
-        position: relative;
+    #responsive-menu .dropdown-toggle span {
+        display: inline-block;
     }
-    #responsive-menu .sub-menu {
-        display: table;
-        position: relative;
-        margin-top: -40px;
-        width: 200px;
+    #responsive-menu .dropdown-menu a:hover {
+        border: none;
     }
-*/
-    /*
-    #responsive-menu .navbar-nav .menu-item {
-        padding: 20px 5px;
+    
+  #responsive-menu .navbar-right {
+    padding-left: 10px;
+  }
+    
+    #responsive-menu .navbar-nav a:hover {
+        border: none;
     }
-    .sub-menu {
-        max-width: 420px;
-    }
-    .footer .adress {
-        font-size: 12px;
-    }
-    #responsive-menu .navbar-nav #logo {
-        width: 100px;
-        height: 40px;
-    }
-    #responsive-menu .navbar-nav li a {
-        font-size: 11px;
-    }
-*/
+  #responsive-menu .navbar-nav li a {
+      font-size: 13px;
+font-weight: 700;
+  }
+  
+  #responsive-menu .navbar-nav .dropdown-toggle {
+    background: none;
+  }
+  #responsive-menu .navbar-nav .sub-menu {
+    position: relative;
+  }
+  
+  #responsive-menu .sub-menu> li> a {
+    display: block;
+/*    padding: 3px 20px;*/
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .sub-menu {
+    position: relative;
+/*    display: block;*/
+  }
+  
+  .sub-menu li {
+    display: block;
+    position: relative;
+}
+  
+  
+  
+  
 }
 
 #logo1 {
@@ -250,12 +286,10 @@ ul {
     display: inline-block;
     width: 140px;
     height: 50px;
-    /*    margin: 0 auto;*/
     background-image: url(../images/cazanova_main_logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /*    padding: 0;*/
     position: absolute;
     left: 40%;
     display: none;
@@ -264,7 +298,6 @@ ul {
 #responsive-menu .navbar-nav #logo:hover {
     border: none;
 }
-
 
 /*
 .content {
@@ -276,7 +309,6 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     height: 582px;
-
 }
 
 .footer .adress {
