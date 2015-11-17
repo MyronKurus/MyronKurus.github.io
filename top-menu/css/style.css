@@ -1,0 +1,361 @@
+ul {
+    list-style-type: none;
+}
+
+#responsive-menu .navbar-nav .menu-item {
+    color: #333;
+    font-size: 13px;
+    padding: 20px;
+    /*  margin: 10px 0;*/
+}
+
+#responsive-menu .navbar-nav a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#responsive-menu .navbar-nav a:hover {
+    color: #d3a352;
+    transition: color 0.7s ease;
+    text-decoration: none;
+    border: 1px solid #d3a352;
+    border-left: none;
+    border-right: none;
+}
+
+.nav-child-wrapper {
+    display: block;
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 0;
+    top: 62px;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#responsive-menu .navbar-left li a,
+#responsive-menu .navbar-right li a {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-right {}
+
+#responsive-menu .navbar-left li,
+#responsive-menu .navbar-right li {
+    padding: 20px 5px;
+}
+
+#responsive-menu .navbar-left li a:hover,
+#responsive-menu .navbar-right li a:hover {
+    padding: 0;
+    margin: 0;
+    border-top: none;
+}
+
+.navbar-nav li:hover .nav-child-wrapper {
+    height: 60px;
+    opacity: 1;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.sub-menu li {
+    display: inline;
+    position: absolute;
+}
+
+#responsive-menu .sub-menu a {
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+#responsive-menu .sub-menu a:hover {
+    color: #d3a352;
+    transition: color 0.7s linear;
+    text-decoration: none;
+    border: none;
+}
+
+.navbar-nav li:hover .sub-menu {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+}
+
+.sub-menu {
+    position: absolute;
+    height: 0px;
+    opacity: 0;
+    transform: rotateY(90deg);
+    width: 800px;
+    margin: 44px auto;
+    z-index: 101;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.sub-menu li:first-child {
+    margin-left: -35px;
+}
+
+#responsive-menu .active-lang a {
+    color: #d3a352;
+}
+
+#responsive-menu .navbar-nav #logo {
+    color: #fcfcf6;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    /*    margin: 0 auto;*/
+    background-image: url(../images/cazanova_main_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*    padding: 0;*/
+}
+
+.navbar-header .langs-top li {
+    display: none;
+}
+
+.navbar-header .langs-top li a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+    #responsive-menu .navbar-nav .menu-item {
+        padding: 20px 5px;
+    }
+    .sub-menu {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #responsive-menu .navbar-nav .menu-item {
+        padding: 20px 5px;
+    }
+    .sub-menu {
+        max-width: 420px;
+    }
+    .footer .adress {
+        font-size: 12px;
+    }
+    #responsive-menu .navbar-nav #logo {
+        width: 100px;
+        height: 60px;
+    }
+    #responsive-menu .navbar-nav li a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-header #logo1 {
+        display: inline-block;
+    }
+    #responsive-menu .navbar-nav #logo {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    #responsive-menu .navbar-nav li {
+        padding: 10px 3px;
+    }
+    #responsive-menu .navbar-nav li a {
+        font-size: 10px;
+    }
+    #responsive-menu .navbar-right {
+        margin-left: 20px;
+    }
+    .navbar-header .langs-top li {
+        display: inline;
+        color: #333;
+    }
+    .navbar-header .langs-top li a {
+        color: #333;
+    }
+    .navbar-header .langs-top li a:hover {
+        color: #d3a352;
+        transition: color 0.7s ease;
+        text-decoration: none;
+        border-bottom: 1px solid #d3a352;
+    }
+    .navbar-header .langs-top .active-lang {
+        color: #d3a352;
+    }
+    .navbar-header .langs-top {
+        width: 120px;
+        padding: 15px;
+        position: absolute;
+    }
+    #responsive-menu .navbar-left {
+        display: none;
+    }
+    .navbar-nav li:hover .nav-child-wrapper {
+        display: none;
+    }
+/*
+    #responsive-menu .sub-menu a {
+        color: #333;
+        margin: 0 10px;
+        display: table;
+        position: relative;
+    }
+    #responsive-menu .sub-menu {
+        display: table;
+        position: relative;
+        margin-top: -40px;
+        width: 200px;
+    }
+*/
+    /*
+    #responsive-menu .navbar-nav .menu-item {
+        padding: 20px 5px;
+    }
+    .sub-menu {
+        max-width: 420px;
+    }
+    .footer .adress {
+        font-size: 12px;
+    }
+    #responsive-menu .navbar-nav #logo {
+        width: 100px;
+        height: 40px;
+    }
+    #responsive-menu .navbar-nav li a {
+        font-size: 11px;
+    }
+*/
+}
+
+#logo1 {
+    color: #fcfcf6;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    /*    margin: 0 auto;*/
+    background-image: url(../images/cazanova_main_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*    padding: 0;*/
+    position: absolute;
+    left: 40%;
+    display: none;
+}
+
+#responsive-menu .navbar-nav #logo:hover {
+    border: none;
+}
+
+
+/*
+.content {
+    margin-top: -40px;
+    padding-bottom: 90px;
+        min-height: 80%
+    background-image: url(../images/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 582px;
+
+}
+
+.footer .adress {
+    width:100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+#responsive-menu .navbar-nav a.logo {
+    color: #fcfcf6;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url(../images/cazanova_main_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: -18px;
+}
+#responsive-menu .navbar-nav .logo:hover {
+  border: none;
+}
+
+*/
+
+
+/*////////////////////////////////////////////////////*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*  height: 80px;*/
+    /*    padding: 10px 0;*/
+}
+
+.footer {
+    background-color: #2D2D2B;
+    color: #C19B65;
+    z-index: 101;
+}
+
+.social-links {
+    width: 140px;
+    font-weight: 100;
+}
+
+.social-links,
+.adress {
+    display: inline-block;
+}
+
+.social-links {
+    float: left;
+}
+
+.adress span {
+    margin-right: 40px;
+    float: right;
+    font-weight: 100;
+}
+
+.social-links li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.social-links img {
+    width: 16px;
+    height: 16px;
+}
