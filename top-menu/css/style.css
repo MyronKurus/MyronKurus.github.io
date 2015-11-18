@@ -205,17 +205,17 @@ ul {
 
 @media screen and (min-width: 768px) {
   
-.dropdown-menu li {
+.sub-menu li {
     display: inline-block;
     position: absolute;
 }
 
-#responsive-menu .dropdown-menu a {
-    color: #FFF;
+#responsive-menu .sub-menu a {
+    color: #fff;
     margin: 0 10px;
 }
 
-#responsive-menu .dropdown-menu a:hover {
+#responsive-menu .sub-menu a:hover {
     color: #d3a352;
     transition: color 0.7s linear;
     text-decoration: none;
@@ -223,19 +223,21 @@ ul {
     background: none;
 }
 
-.dropdown-menu {
+.sub-menu {
     background: transparent;
     border: none;
 }
 
-#responsive-menu .navbar-nav li:hover .dropdown-menu {
+li:hover .sub-menu {
     transform: rotateY(0deg);
     opacity: 1;
     transition: all 0.7s linear;
     -webkit-transition: all 0.7s linear;
 }
   
-  #responsive-menu .navbar-nav li:hover .dropdown-menu {
+  #responsive-menu .navbar-nav .dropdown:hover .sub-menu {
+    display: block;
+/*    height: 40px;*/
     transform: rotateY(0deg);
     opacity: 1;
     transition: all 0.7s linear;
