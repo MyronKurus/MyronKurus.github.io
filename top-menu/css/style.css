@@ -203,7 +203,9 @@ ul {
     #responsive-menu .navbar-nav .dropdown-toggle {
         background: none;
     }
-
+    .nav-center .item1 {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -241,7 +243,6 @@ li:hover .sub-menu {
   
   #responsive-menu .navbar-nav .dropdown:hover .sub-menu {
     display: block;
-/*    height: 40px;*/
     transform: rotateY(0deg);
     opacity: 1;
     transition: all 0.7s linear;
@@ -295,66 +296,4 @@ li:hover .sub-menu {
 
 #responsive-menu .navbar-nav #logo:hover {
     border: none;
-}
-
-.content {
-  width: 50%;
-  height: 300px;
-  background: #333;
-}
-
-
-
-
-
-
-/*////////////////////////////////////////////////////*/
-
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer {
-    background-color: #2D2D2B;
-    color: #C19B65;
-    z-index: 101;
-}
-
-.social-links {
-    width: 140px;
-    font-weight: 100;
-}
-
-.social-links,
-.adress {
-    display: inline-block;
-}
-
-.social-links {
-    float: left;
-}
-
-.adress span {
-    margin-right: 40px;
-    float: right;
-    font-weight: 100;
-}
-
-.social-links li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-.footer a:hover {
-    text-decoration: none;
-    border: none;
-}
-
-.social-links img {
-    width: 16px;
-    height: 16px;
 }
