@@ -77,12 +77,10 @@ ul {
     display: inline-block;
     width: 140px;
     height: 60px;
-    /*    margin: 0 auto;*/
     background-image: url(../images/cazanova_main_logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /*    padding: 0;*/
 }
 
 .navbar-header .langs-top li {
@@ -131,6 +129,11 @@ ul {
     #responsive-menu .navbar-nav li a {
         font-size: 11px;
     }
+  
+  .nav-center .item1 {
+    margin-left: -45px;
+  }
+  
 }
 
 
@@ -227,6 +230,7 @@ ul {
     background: transparent;
     border: none;
 }
+  
 
 li:hover .sub-menu {
     transform: rotateY(0deg);
@@ -263,6 +267,14 @@ li:hover .sub-menu {
     margin-left: 15px;
 }
   
+  .nav-center {
+    padding: 0 0 0 60px;
+  }
+  
+  .nav-center li {
+    padding: 0 10px;
+  }
+  
 }
 
 
@@ -285,7 +297,11 @@ li:hover .sub-menu {
     border: none;
 }
 
-
+.content {
+  width: 50%;
+  height: 300px;
+  background: #333;
+}
 
 
 
