@@ -145,6 +145,25 @@ ul {
     background-size: cover;
     height: 582px;
 }
+
+#responsive-menu .navbar-nav a.logo {
+    color: #fcfcf6;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 120px;
+/*    height: 60px;*/
+/*    margin: 0 auto;*/
+    background-image: url(../images/cazanova_main_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: -18px;
+}
+#responsive-menu .navbar-nav .logo:hover {
+  border: none;
+}
+
+
 /*////////////////////////////////////////////////////*/
 .footer {
     position: absolute;
@@ -170,22 +189,7 @@ ul {
 .social-links {
     float: left;
 }
-#responsive-menu .navbar-nav a.logo {
-    color: #fcfcf6;
-    text-indent: -9999px;
-    display: inline-block;
-    width: 120px;
-/*    height: 60px;*/
-/*    margin: 0 auto;*/
-    background-image: url(../images/cazanova_main_logo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: -18px;
-}
-#responsive-menu .navbar-nav .logo:hover {
-  border: none;
-}
+
 .adress span {
     margin-right: 40px;
     float: right;
