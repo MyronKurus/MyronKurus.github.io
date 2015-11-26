@@ -1,0 +1,38 @@
+.left, .right {
+    min-height: calc(100vh - 124px);
+}
+
+p {
+    text-align: justify;
+}
+h3, .send {
+    text-transform: uppercase;
+}
+input, textarea {
+    width: 90%;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    outline: 0;
+}
+.send {
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+.send:hover {
+    border-top: 2px solid #d3a352;
+    border-bottom: 2px solid #d3a352;
+    color: #d3a352;
+    transition: color 0.7s ease;
+    text-decoration: none;
+}
+.nav-child-wrapper {
+    z-index: 999;
+}
+
+.sub-menu {
+    z-index: 1001;
+}

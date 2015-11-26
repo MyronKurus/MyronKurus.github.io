@@ -1,0 +1,24 @@
+.left, .right {
+    min-height: calc(100vh - 124px);
+}
+
+p {
+    text-align: justify;
+}
+
+.right a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right a:hover {
+    border-top: 2px solid #d3a352;
+    border-bottom: 2px solid #d3a352;
+    color: #d3a352;
+    transition: color 0.7s ease;
+}
