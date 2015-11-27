@@ -1,9 +1,9 @@
-.dishes,
+﻿.dishes,
 .bar,
 .vine,
 .cocktails {
 /*    height: px;*/
-    min-height: calc(100vh - 124px);
+    height: calc(100vh - 124px);
     width: 25%;
     display: inline-block;
     margin: 0;
@@ -39,7 +39,7 @@
 .menu-link {
     background: rgba(0, 0, 0, .7);
 /*    height: 984px;*/
-    min-height: calc(100vh - 124px);
+    height: calc(100vh - 124px);
 }
 
 .content div:hover {
