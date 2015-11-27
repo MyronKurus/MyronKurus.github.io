@@ -8,7 +8,11 @@ ul {
     padding: 20px;
 }
 #responsive-menu .navbar-nav .sub-menu {
-  min-width: 680px;
+  min-width: 570px;
+    z-index: 1001;
+}
+#responsive-menu .navbar-nav .sub-menu a {
+    margin: 3px;
 }
 #responsive-menu .navbar-nav a {
     text-decoration: none;
@@ -42,6 +46,7 @@ ul {
     width: 100%;
     height: 0px;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
 }
 
 #responsive-menu .navbar-left li a,
@@ -122,9 +127,11 @@ ul {
     #responsive-menu .navbar-nav .menu-item {
         padding: 20px 5px;
     }
-    .sub-menu {
-        max-width: 420px;
-    }
+ 
+    #responsive-menu .navbar-nav .sub-menu {
+  min-width: 470px;
+}
+    
     .footer .adress {
         font-size: 12px;
     }

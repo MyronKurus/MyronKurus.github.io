@@ -49,5 +49,6 @@ p {
 
 .map {
     width: 100%;
-    height: 295px;
+    height: calc(100vh - 383px);
+    min-height: 295px;
 }

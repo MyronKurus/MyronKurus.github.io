@@ -2,7 +2,7 @@
 .bar,
 .vine,
 .cocktails {
-    height: 684px;
+    height: 984px;
     width: 25%;
     display: inline-block;
     margin: 0;
@@ -33,12 +33,11 @@
     background-image: url(../images/menu4.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
 .menu-link {
     background: rgba(0, 0, 0, .7);
-    height: 684px;
+    height: 984px;
 }
 
 .content div:hover {
@@ -53,16 +52,15 @@
 }
 
 .content a span {
-    bottom: 0px;
-    position:absolute;
-/*left:50%;*/
-
-/*background:#ccc;*/
-    margin-left: -5%; /* Отступ слева */
-    width: 10%; 
+    bottom: 40px;
+    position: absolute;
+    /*left:50%;*/
+    /*background:#ccc;*/
+    margin-left: -5%;
+    /* Отступ слева */
+    width: 10%;
     color: #fff;
     border: none;
-    
     text-transform: uppercase;
     text-align: center;
 }
@@ -73,28 +71,40 @@
 }
 
 .content a:hover .title {
-    bottom: 200px;
+/*    transform: rotateY(360deg);*/
+    bottom: 300px;
     font-weight: 700;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .title:hover .content div {
     opacity: 0;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .content {
     font-size: 0px;
     text-align: center;
 }
-.content span {
-/*    position: absolute;*/
-    position:absolute;
-/*left:50%;*/
 
-/*background:#ccc;*/
-    margin-left: -5%; /* Отступ слева */
-    width: 10%; /* Ширина слоя */
+.content span {
+    /*    position: absolute;*/
+    position: absolute;
+    /*left:50%;*/
+    /*background:#ccc;*/
+    margin-left: 0;
+
+    width: 10%;
+    /* Ширина слоя */
+}
+
+@media screen and (max-width: 1368px) {
+    .dishes, .bar, .vine, .cocktails, .menu-link {
+        height: 553px;
+    }
+    .content a span {
+        bottom: 80px;
+    }
 }

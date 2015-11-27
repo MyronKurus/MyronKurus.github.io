@@ -4,7 +4,7 @@
 
 .photo,
 .descr {
-    height: 41vh;
+    height: calc(41vh - 1px);
 }
 
 .photo-left {
@@ -52,4 +52,8 @@ p {
   background: #ECC284;
   color: #fff;
   transition: all 0.7s linear;
+}
+.row {
+    max-width: 100%;
+    margin: auto;
 }
