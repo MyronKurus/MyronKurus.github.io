@@ -2,7 +2,8 @@
 .bar,
 .vine,
 .cocktails {
-    height: 984px;
+/*    height: px;*/
+    min-height: calc(100vh - 124px);
     width: 25%;
     display: inline-block;
     margin: 0;
@@ -37,7 +38,8 @@
 
 .menu-link {
     background: rgba(0, 0, 0, .7);
-    height: 984px;
+/*    height: 984px;*/
+    min-height: calc(100vh - 124px);
 }
 
 .content div:hover {
@@ -52,7 +54,7 @@
 }
 
 .content a span {
-    bottom: 40px;
+    bottom: 80px;
     position: absolute;
     /*left:50%;*/
     /*background:#ccc;*/
@@ -72,7 +74,7 @@
 
 .content a:hover .title {
 /*    transform: rotateY(360deg);*/
-    bottom: 300px;
+    bottom: 50%;
     font-weight: 700;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -98,13 +100,4 @@
 
     width: 10%;
     /* Ширина слоя */
-}
-
-@media screen and (max-width: 1368px) {
-    .dishes, .bar, .vine, .cocktails, .menu-link {
-        height: 553px;
-    }
-    .content a span {
-        bottom: 80px;
-    }
 }
