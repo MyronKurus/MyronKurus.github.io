@@ -49,6 +49,12 @@ ul {
     z-index: 999;
 }
 
+#responsive-menu .navbar-left {
+    margin-left: -30px;
+    margin-right: 40px;
+    padding: 0;
+}
+
 #responsive-menu .navbar-left li a,
 #responsive-menu .navbar-right li a {
     padding: 0;
@@ -224,6 +230,9 @@ ul {
     .nav-center .item1 {
         margin-left: 0;
     }
+     .footer {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -321,6 +330,7 @@ ul {
     font-weight: 800;
     padding: 20px 0;
     width: 100%;
+    font-style: italic;
 }
 
 .social-links img {
@@ -367,4 +377,5 @@ ul {
     .content {
         min-height: calc(100vh - 121px);
     }
+   
 }
