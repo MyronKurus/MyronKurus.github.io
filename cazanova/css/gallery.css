@@ -5,5 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 */
-    height: calc(100vh - 155px);
+/*    height: calc(100vh - 155px);*/
+}
+.carousel-inner {
+    height: calc(100vh - 109px);
 }

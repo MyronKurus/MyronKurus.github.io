@@ -1,11 +1,14 @@
 .left, .right {
-    min-height: calc(100vh - 124px);
+    min-height: calc(100vh - 109px);
 }
 
 p {
     text-align: justify;
 }
-
+.left h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
 .right a {
     text-transform: uppercase;
     text-decoration: none;
@@ -16,9 +19,16 @@ p {
     width: 100%;
 }
 
-.right a:hover {
-    border-top: 2px solid #d3a352;
+.right a span {
+    border-bottom: 2px solid #333;
+}
+
+.right a:hover span{
+/*    border-top: 2px solid #d3a352;*/
     border-bottom: 2px solid #d3a352;
+}
+
+.right a:hover {
     color: #d3a352;
     transition: color 0.7s ease;
 }

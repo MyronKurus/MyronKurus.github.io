@@ -25,6 +25,9 @@ ul {
     margin-bottom: -20px;
 }
 
+.nav-center li:first-child{
+       margin-left: -10px:
+    }
 #responsive-menu .navbar-nav a:hover {
     color: #d3a352;
     transition: color 0.7s ease;
@@ -98,6 +101,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0;
 }
 
 .navbar-header .langs-top li {
@@ -113,10 +117,10 @@ ul {
 
 @media screen and (max-width: 1199px) {
     #responsive-menu .navbar-nav .menu-item {
-        padding: 20px 5px;
+        padding: 30px 12px;
     }
     .sub-menu {
-        max-width: 420px;
+        max-width: 480px;
     }
 }
 
@@ -131,7 +135,7 @@ ul {
 
 @media screen and (max-width: 991px) {
     #responsive-menu .navbar-nav .menu-item {
-        padding: 20px 5px;
+        padding: 30px 10px;
     }
  
     #responsive-menu .navbar-nav .sub-menu {
@@ -139,7 +143,7 @@ ul {
 }
     
     .footer .adress {
-        font-size: 12px;
+        font-size: 18px;
     }
     #responsive-menu .navbar-nav #logo {
         width: 100px;
@@ -150,6 +154,9 @@ ul {
     }
     .nav-center .item1 {
         margin-left: -45px;
+    }
+    .sub-menu {
+        width: 500px;
     }
 }
 
@@ -230,9 +237,14 @@ ul {
     .nav-center .item1 {
         margin-left: 0;
     }
-     .footer {
+     .footer ul, .footer span{
         display: none;
     }
+    
+     .footer .adress {
+        font-size: 12px;
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -320,19 +332,20 @@ ul {
 
 .content {
     margin-top: -20px;
-    min-height: calc(100vh - 124px);
+    min-height: calc(100vh - 129px);
 }
 
 
 /*/////////////////////////FOOTER///////////////////////////////*/
 
 .footer {
+    font-size: 18px;
     background-color: #2D2D2B;
     color: #C19B65;
     z-index: 101;
     text-align: center;
-    font-weight: 800;
-    padding: 20px 0;
+    font-weight: 300;
+    padding: 10px 0;
     width: 100%;
     font-style: italic;
 }
@@ -363,23 +376,22 @@ ul {
 
 @media screen and (max-width: 1007px) {
     .content {
-        min-height: calc(100vh - 121px);
+        min-height: calc(100vh - 129px);
+    }
+}
+
+@media screen and (max-width: 987px) {
+    .content {
+        min-height: calc(100vh - 129px);
     }
 }
 @media screen and (max-width: 767px) {
     .content {
-        min-height: calc(100vh - 52px);
+        min-height: calc(100vh - 89px);
     }
   .adress span {
 /*    width: 860px;*/
   text-align: center;
   padding-right: 20px;
 }
-}
-
-@media screen and (max-width: 684px) {
-    .content {
-        min-height: calc(100vh - 52px);
-    }
-   
 }
