@@ -290,6 +290,10 @@ ul {
     .nav-center li {
         padding: 0 10px;
     }
+    .content {
+        min-height: calc(100vh - 52px);
+    }
+    
 }
 
 #logo1 {
@@ -362,9 +366,9 @@ ul {
         min-height: calc(100vh - 121px);
     }
 }
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 767px) {
     .content {
-        min-height: calc(100vh - 109px);
+        min-height: calc(100vh - 52px);
     }
   .adress span {
 /*    width: 860px;*/
@@ -375,7 +379,7 @@ ul {
 
 @media screen and (max-width: 684px) {
     .content {
-        min-height: calc(100vh - 121px);
+        min-height: calc(100vh - 52px);
     }
    
 }
