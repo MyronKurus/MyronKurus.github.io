@@ -124,13 +124,17 @@ h2 {
 p {
     font-family: 'Open Sans', sans-serif;
 }
+
+
 @media screen and (max-width: 1199px) {
     #responsive-menu .navbar-nav .menu-item {
         padding: 20px 12px;
     }
     .sub-menu {
         max-width: 480px;
+/*        position: relative;*/
     }
+
 }
 
 @media screen and (max-width: 1980px) {
@@ -152,7 +156,7 @@ p {
 }
     
     .footer .adress {
-        font-size: 18px;
+        font-size: 14px;
     }
     #responsive-menu .navbar-nav #logo {
         width: 100px;
@@ -388,20 +392,16 @@ p {
   font-weight: 100;
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 1017px) {
     .content {
-        min-height: calc(100vh - 129px);
+        min-height: calc(100vh - 109px);
     }
 }
 
-@media screen and (max-width: 987px) {
-    .content {
-        min-height: calc(100vh - 129px);
-    }
-}
+
 @media screen and (max-width: 767px) {
     .content {
-        min-height: calc(100vh - 89px);
+        min-height: calc(100vh - 94px);
     }
   .adress span {
 /*    width: 860px;*/
@@ -418,6 +418,7 @@ p {
 #shbar:hover{
         cursor: pointer;
     }
+
 
 @media screen and (max-width: 767px) {
     #restour-resp,
