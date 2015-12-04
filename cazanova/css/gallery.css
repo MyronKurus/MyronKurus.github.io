@@ -1,12 +1,8 @@
-.content {
-
-   /* background-image: url(../images/interior3.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-*/
-/*    height: calc(100vh - 155px);*/
+.fotorama {
+margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
 }
-.carousel-inner {
-    height: calc(100vh - 109px);
+
+.fotorama img {
+/* width: 100%;*/
 }

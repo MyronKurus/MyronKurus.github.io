@@ -19,6 +19,7 @@ ul {
     padding: 5px 0;
     font-size: 13px;
     text-transform: uppercase;
+    font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
 .navbar-header {
@@ -115,9 +116,17 @@ ul {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 @media screen and (max-width: 1199px) {
     #responsive-menu .navbar-nav .menu-item {
-        padding: 30px 12px;
+        padding: 20px 12px;
     }
     .sub-menu {
         max-width: 480px;
@@ -135,7 +144,7 @@ ul {
 
 @media screen and (max-width: 991px) {
     #responsive-menu .navbar-nav .menu-item {
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
  
     #responsive-menu .navbar-nav .sub-menu {
@@ -266,15 +275,11 @@ ul {
     .sub-menu {
         background: transparent;
         border: none;
+        display: block !important;
     }
-    li:hover .sub-menu {
-        transform: rotateY(0deg);
-        opacity: 1;
-        transition: all 0.7s linear;
-        -webkit-transition: all 0.7s linear;
-    }
+    
     #responsive-menu .navbar-nav .dropdown:hover .sub-menu {
-        display: block;
+/*        display: block;*/
         transform: rotateY(0deg);
         opacity: 1;
         transition: all 0.7s linear;
@@ -290,6 +295,14 @@ ul {
         border: none;
         box-shadow: none;
     }
+    
+    li:hover .sub-menu {
+        transform: rotateY(0deg);
+        opacity: 1;
+        transition: all 0.7s linear;
+        -webkit-transition: all 0.7s linear;
+    }
+    
     .navbar li {
         position: relative;
     }
@@ -332,22 +345,23 @@ ul {
 
 .content {
     margin-top: -20px;
-    min-height: calc(100vh - 129px);
+    min-height: calc(100vh - 109px);
 }
 
 
 /*/////////////////////////FOOTER///////////////////////////////*/
 
 .footer {
-    font-size: 18px;
+    font-size: 14px;
     background-color: #2D2D2B;
     color: #C19B65;
     z-index: 101;
     text-align: center;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 12px 0 13px 0;
     width: 100%;
-    font-style: italic;
+/*    font-style: italic;*/
+    font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
 .social-links img {
@@ -394,4 +408,30 @@ ul {
   text-align: center;
   padding-right: 20px;
 }
+}
+#restour-resp,
+#shbar-resp {
+    display: none;
+}
+
+#restour:hover,
+#shbar:hover{
+        cursor: pointer;
+    }
+
+@media screen and (max-width: 767px) {
+    #restour-resp,
+    #shbar-resp{
+        display: block;
+    }
+    
+    #restour-resp:hover,
+    #shbar-resp:hover{
+        cursor: pointer;
+    }
+    
+    #restour,
+    #shbar{
+        display: none;
+    }
 }

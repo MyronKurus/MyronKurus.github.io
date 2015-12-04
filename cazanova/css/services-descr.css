@@ -7,10 +7,12 @@ p {
 }
 
 .left {
-    background-image: url(../images/event-descr.jpg);
+    padding: 20px;
+    /*background-image: url(../images/event-descr.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+*/
 }
 
 .right {

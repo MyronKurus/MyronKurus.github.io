@@ -14,7 +14,7 @@ p {
 }
 
 .right {
-    padding-left: 30px;
+    padding: 0 20px;
 }
 h3 {
     text-transform: uppercase;
@@ -27,39 +27,23 @@ h3 {
     border-left: none;
      padding: 5px 0;
 }
-/*.content {
+
+.cont {
     width: 100%;
-    margin: 0 auto;
-}
-*/
-/*h3, .send {
-    text-transform: uppercase;
-}
-input, textarea {
-    width: 90%;
-    border-radius: 5px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    outline: 0;
-}
-.send {
-    text-align: center;
-    font-weight: 500;
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-}
-.send:hover {
-    border-top: 2px solid #d3a352;
-    border-bottom: 2px solid #d3a352;
-    color: #d3a352;
-    transition: color 0.7s ease;
-    text-decoration: none;
-}
-.nav-child-wrapper {
-    z-index: 999;
 }
 
-.sub-menu {
-    z-index: 1001;
+.services {
+    color: #ECC284;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #ECC284;
+    border-radius: 3px;
+    float: right;
+    margin-top: 40px;
+}
+.services:hover {
+    text-decoration: none;
+    background: #ECC284;
+    color: #fff;
+      transition: all 0.7s linear;
 }

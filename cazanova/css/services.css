@@ -4,7 +4,7 @@
 }
 
 .photo-left {
-    background-image: url(../images/event1.jpg);
+    background-image: url(../images/interior5.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,18 +17,14 @@
     background-size: cover;
 }
 
-h4 {
-    margin-top: 12%;
-    font-style: italic;
-    text-align: center;
-}
-
 h3 {
   text-transform: uppercase;
+/*  border: 1px solid #805317;*/
   border-left: none;
   border-right: none;
   text-align: center;
-  padding: 0 0 5px 0;
+  padding: 5px;
+  margin-top: 15%;
   color: #ECC284;
   text-decoration: underline;
 }
@@ -46,7 +42,6 @@ p {
   width: 120px;
 /*  margin-left: 195px;*/
   float: right;
-    margin-right: 40px;
 }
 .descr a:hover {
   text-decoration: none;

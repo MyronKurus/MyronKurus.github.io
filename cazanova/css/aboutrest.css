@@ -6,9 +6,10 @@
 }
 
 .right {
-  padding-left: 40px;
+/*  padding-left: 40px;*/
   min-height: calc(85vh - 7px);
   text-align: justify;
+    padding: 0 20px;
 }
 
 h2 {
@@ -20,6 +21,7 @@ h2 span {
   border: 2px solid #524f4f;
   border-left: none;
   border-right: none;
+    padding: 4px 0;
 }
 .sub-menu, {
   z-index: 1001;
@@ -27,4 +29,7 @@ h2 span {
 
 .nav-child-wrapper {
   z-index: 901;
+}
+.cont {
+    width: 100%;
 }
