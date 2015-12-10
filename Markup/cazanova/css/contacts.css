@@ -1,0 +1,49 @@
+.social-nw img {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.social-nw {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.social-nw a {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+}
+
+.social-nw a:hover {
+    border: none;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.tel {
+    color: #d3a352;
+    font-weight: 700;
+}
+
+.hour {
+    font-weight: 700;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.map {
+    width: 100%;
+    height: calc(100vh - 366px);
+    min-height: 295px;
+}

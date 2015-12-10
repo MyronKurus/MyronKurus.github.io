@@ -1,0 +1,111 @@
+.dishes,
+.bar,
+.vine,
+.cocktails {
+/*    height: px;*/
+    height: calc(100vh - 109px);
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    text-align: center;
+}
+
+.dishes {
+    background-image: url(../images/menu1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bar {
+    background-image: url(../images/menu2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vine {
+    background-image: url(../images/menu3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cocktails {
+    background-image: url(../images/menu4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-link {
+    background: rgba(0, 0, 0, .7);
+/*    height: 984px;*/
+    height: calc(100vh - 109px);
+}
+.content div:hover {
+    opacity: 0;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+}
+
+.content a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+.content a span {
+    bottom: 80px;
+    position: absolute;
+    /*left:50%;*/
+    /*background:#ccc;*/
+    margin-left: -5%;
+    /* Отступ слева */
+    width: 10%;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content a:hover .title {
+/*    transform: rotateY(360deg);*/
+    bottom: 45%;
+    font-weight: 700;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.title:hover .content div {
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.content {
+    font-size: 0px;
+    text-align: center;
+}
+
+.content span {
+    /*    position: absolute;*/
+    position: absolute;
+    /*left:50%;*/
+    /*background:#ccc;*/
+    margin-left: 0;
+
+    width: 10%;
+    /* Ширина слоя */
+}
+@media screen and (max-width: 767px) {
+    .dishes,
+.bar,
+.vine,
+.cocktails,
+.menu-link{
+    height: calc(100vh - 89px);
+    }
+}

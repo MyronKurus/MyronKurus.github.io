@@ -1,0 +1,26 @@
+.content {
+    background-image: url(../images/interior5.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    padding: 10px 0;
+    text-transform: uppercase;
+/*    border: 2px solid #000;*/
+    text-align: center;
+    margin-top: -20px;
+}
+
+h2 span {
+    border: 2px solid #524f4f;
+    border-left: none;
+    border-right: none;
+    padding: 3px 0;
+}
+
+.content {
+    margin-top: -10px;
+    min-height: calc(100vh - 155px);
+}
