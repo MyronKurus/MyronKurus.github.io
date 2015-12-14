@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Remove Elements</title>
+</head>
+<body>
+
+<div>Це</div>
+<div>Всі</div>
+<div>Елементи DOM</div>
+
+<script>
+
+    if (document.documentElement.remove === undefined) {
+        Object.defineProperty(Element.prototype, 'remove', {
+            get: function() {
+                this.parentNode.removeChild(this);
+            }
+        });
+    }
+    var elem = document.body.children[0];
+    elem.remove();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Show Notification</title>
+    <style>
+        .notification {
+            position: fixed;
+            z-index: 1000;
+            padding: 5px;
+            border: 1px solid black;
+            font: normal 20px Georgia;
+            background: white;
+            text-align: center;
+        }
+
+        .welcome {
+            background: red;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h2>Повідомленню</h2>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur quam ex eaque inventore quod voluptatem adipisci omnis nemo nulla fugit iste numquam ducimus cumque minima porro ea quidem maxime necessitatibus beatae labore soluta voluptatum
+    magnam consequatur sit laboriosam velit excepturi laborum sequi eos placeat et quia deleniti? Corrupti velit impedit autem et obcaecati fuga debitis nemo ratione iste veniam amet dicta hic ipsam unde cupiditate incidunt aut iure ipsum officiis soluta
+    temporibus. Tempore dicta ullam delectus numquam consectetur quisquam explicabo culpa excepturi placeat quo sequi molestias reprehenderit hic at nemo cumque voluptates quidem repellendus maiores unde earum molestiae ad.
+</p>
+
+<p>В CSS є готовий класс notification, який можна ставити повідомленню.</p>
+
+<script>
+   
+    function showNotification(options) {
+
+        var notify = document.createElement('div');
+
+        notify.style.top = options.top + 'px';
+        notify.style.right = options.right + 'px';
+
+        notify.classList.add('notification');
+        notify.classList.add(options.className);
+
+        notify.innerHTML = options.html;
+
+        document.body.appendChild(notify);
+
+        setTimeout(function() {
+            notify.parentNode.removeChild(notify);
+        }, 1500);
+    }
+
+    // тест 
+    var i = 0;
+    setInterval(function() {
+        showNotification({
+            top: 10,
+            right: 10,
+            html: 'Привіт ' + ++i,
+            className: "welcome"
+        });
+    }, 2000);
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Remove Children</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <td>Це</td>
+        <td>Всі</td>
+        <td>Елементи DOM</td>
+    </tr>
+</table>
+
+<ol id="ol">
+    <li>Вася</li>
+    <li>Петя</li>
+    <li>Маша</li>
+    <li>Даша</li>
+</ol>
+
+<script>
+    function removeChildren(elem) {
+        var body = document.body;
+        var parentElem = body.getElementsByTagName(elem.id)[0];
+        var elemChildrenLen = parentElem.children.length;
+        for (var i = 0; i < elemChildrenLen; i++) {
+            parentElem.removeChild(parentElem.children[0]);
+        }
+    }
+
+    removeChildren(table);
+    removeChildren(ol); 
+</script>
+</body>
+</html>
