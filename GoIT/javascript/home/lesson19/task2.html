@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Drop Down List</title>
+    <style>
+
+        .sweets-menu {
+            cursor: pointer;
+        }
+
+        .sweets-menu::before {
+            content: '▶ ';
+            color: green;
+        }
+
+        .sweets-list {
+            display: none;
+        }
+
+        .sweets-list-show .sweets__menu::before {
+            content: '▼ ';
+            font-size: 80%;
+            color: green;
+        }
+
+        .sweets-list-show .sweets-list {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="sweets">
+
+    <span class="sweets-menu">Sweets (Push me)!</span>
+
+    <ul class="sweets-list">
+        <li>Cake</li>
+        <li>Donnut</li>
+        <li>Muffin</li>
+    </ul>
+
+</div>
+<script>
+    var sweets = document.body.querySelector('.sweets');
+    var sweetsMenu = document.body.querySelector('.sweets-menu');
+
+    sweetsMenu.addEventListener('click', toggleList);
+
+    function toggleList() {
+        sweets.classList.toggle('sweets-list-show');
+    }
+
+
+
+</script>
+</body>
+</html>
