@@ -30,6 +30,10 @@
     src: url(../fonts/GothamPro/GothaProBla.otf);
 }
 
+@font-face {
+    font-family: Calibri;
+    src: url(../fonts/Calibri.ttf);
+}
 
 /*/////////////////////////////*/
 
@@ -69,7 +73,6 @@ a.navbar-brand img {
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #ddd;
-/*    font-weight: 700;*/
 }
 
 .navbar-right li ul {
@@ -141,8 +144,8 @@ ul.navbar-nav li a {
 }
 .certified {
     position: absolute;
-    bottom: 55px;
-    right: 40px;
+    bottom: 0px;
+    right: 0px;
 }
 
 .content-right h3 {
@@ -162,9 +165,12 @@ ul.navbar-nav li a {
 }
 
 .content-right h3,
-.content-right .options, 
-.content-right button {
+.content-right .options {
     margin-left: 190px
+}
+
+.content-right button {
+    margin-left: 160px;
 }
 
 .options {
@@ -196,40 +202,11 @@ ul.navbar-nav li a {
 
 .about span{
     color: rgb(255, 163, 3);
+    font-size: 32px;
 }
 
-/*
-#portfolio {
-    width: 100%;
-    color: rgb(70, 70, 70);
-}
-#portfolio h3 {
-    text-transform: uppercase;
-    
-}
-*/
-/*
-#portfolio p {
-    font-family:     font-family: FuturaPTLight;;
-    font-family: FuturaPTLight;
-    font-size: 16px;
-}
-#portfolio>div {
-    position: relative;
-    width: 1320px;
-    max-width: 100%;
-    height: 656px;
-    margin: 26px auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-}
-#portfolio .portfolio-content {
-    margin-left: 95px;
-}
-*/
 #portfolio .portfolio-content h3 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: FuturaPTDemi;
     font-size: 36px;
     text-transform: uppercase;
@@ -248,6 +225,7 @@ ul.navbar-nav li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 40px;
 }
 
 #portfolio .ajour {
@@ -270,7 +248,7 @@ ul.navbar-nav li a {
 
 .portfolio-pref {
     width: 100%;
-/*    text-align: center;*/
+    margin-top: 30px;
 }
 
 .portfolio-pref i {
@@ -293,15 +271,15 @@ ul.navbar-nav li a {
 }
 
 .ajour .portfolio-content {
-    width: 370px;
+    width: 420px;
 }
 
 .melissa .portfolio-content {
-    width: 510px;
+    width: 580px;
 }
 
 .dfstore .portfolio-content {
-    width: 450px;
+    width: 580px;
 }
 #portfolio .dfstore h3,
 #portfolio .dfstore i {
@@ -314,13 +292,26 @@ ul.navbar-nav li a {
 
 #e-commerce .row div>div {
     border: 1px solid rgb(255, 163, 3);
-    border-radius: 3px;
+    border-radius: 5px;
+    font-family: Calibri;
+    font-size: 16px;
+}
+
+#e-commerce .row div>div:hover {
+    background-image: linear-gradient(0deg, #f58220 0%, #ffdd00 100%);
+    color: #fff;
+    cursor: default;
+}
+
+#e-commerce h2,
+#e-commerce h3 {
+    font-weight: 700;
 }
 
 .devops {
     padding-left: 20px;
     padding-top: 70px;
-    height: 350px;
+    height: 410px;
     padding-right: 70px;
 }
 
@@ -334,7 +325,7 @@ ul.navbar-nav li a {
 }
 
 .magento, .erp, .pim, .wms, .projecting, .mobile-app {
-    height: 165px;
+    height: 195px;
     margin-bottom: 20px;
     position: relative;
     padding: 20px 50px 20px 20px; 
@@ -344,16 +335,24 @@ ul.navbar-nav li a {
     padding-right: 45px;
 }
 
-#e-commerce a img {
-    width: 36px;
-    height: 36px;
+#e-commerce .row div .arrow {
+    border: none;
 }
 
-/*
-#e-commerce {
-    padding-bottom: 160px;
+.arrow {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/arrow-color.svg);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
 }
-*/
+
+#e-commerce .row div>div:hover .arrow {
+    background-image: url(../img/arrow-hover.svg);
+}
 
 #e-commerce a img {
     position: absolute;
@@ -361,12 +360,14 @@ ul.navbar-nav li a {
     top: 50%;
     transform: translateY(-50%);
 }
-#e-commerce .devops a img {
-    right: 25px;
+#e-commerce .devops .arrow {
+    position: inherit;
+/*    right: 25px;*/
+    margin-top: 40px;
 }
 #team {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 
 .team-member {
@@ -467,11 +468,10 @@ ul.navbar-nav li a {
     font-family: FuturaPTLight;
 }
 
-
-
 #modules {
     background-color: rgb(243, 243, 243);
     text-align: center;
+    padding-top: 40px;
 }
 .module-item {
     width: 250px;
@@ -522,6 +522,8 @@ ul.navbar-nav li a {
 
 p.module-description {
     margin-top: 10px;
+    font-family: Calibri;
+    font-size: 16px;
 }
 
 #questions,
@@ -542,6 +544,7 @@ button.accordion {
     font-family: Arial;
     font-size: 22px;
     position: relative;
+    border-radius: 5px;
 }
 
 div.panel {
@@ -557,7 +560,6 @@ button.accordion i {
     top: 50%;
     right: 18px;
     transform: translateY(-50%);
-    color: rgb(255, 163, 3);
     transition: transform 0s;
 }
 
@@ -662,7 +664,6 @@ button.accordion.active i {
     cursor: pointer;
 }
 
-
 .slider {
     width: 680px;
     margin: auto;
@@ -708,8 +709,6 @@ button.accordion.active i {
 /*//////////////////////////*/
 
 
-
-
 #slider-big  {
     max-width: 100%;
     min-height: 560px;
@@ -718,7 +717,6 @@ button.accordion.active i {
 #slider-big  .owl-carousel {
     margin-top: 40px;
     margin-bottom: 40px;
-/*    height: 80px;*/
     max-width: 90%;
     margin: 40px auto;
 }
@@ -737,20 +735,14 @@ button.accordion.active i {
     
 }
 #slider-big .owl-nav .owl-next {
-    right: -35px;
+    right: 85px;
 }
 #slider-big .owl-nav .owl-prev {
-    left: -35px;
+    left: 85px;
     transform: scaleX(-1);
 }
 
 /*////////////////////////////////*/
-
-
-
-
-
-
 
 #partners-slider {
     max-width: 100%;
@@ -888,8 +880,8 @@ footer h4 {
     margin-top: 0;
 }
 
-footer a {
-    text-decoration: none;
+.magento-info ul li, .about-us ul li {
+    margin: 10px 0;
 }
 
 footer a {
@@ -999,6 +991,13 @@ footer p {
         color: #333;
         margin-top: 586px;
         margin-bottom: 40px;
+    }
+    
+    #slider-big .owl-nav .owl-next {
+        right: 0px;
+    }
+    #slider-big .owl-nav .owl-prev {
+        left: 0px;
     }
     
     .master,
@@ -1192,20 +1191,11 @@ footer p {
         margin-top: 10px;
         position: relative;
         top: 0px;
-/*        text-align: center;*/
     }
     
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
     }
-/*
-    
-    .navbar-right {
-    margin-top: 0;
-    margin-left: 20px;
-    float: left!important;
-}
-*/
     
     .navbar-right {
         position: relative;
@@ -1290,16 +1280,6 @@ footer p {
         margin-top: 376px;
     }
     
-/*
-    .ajour .portfolio-content,
-    .melissa .portfolio-content,
-    .dfstore .portfolio-content,
-    .louise .portfolio-content {
-        position: absolute;
-        margin-top: 656px;
-    }
-*/
-    
     #e-commerce .devops {
         padding-top: 16px;
         padding-right: 210px;
@@ -1378,6 +1358,9 @@ footer p {
     
     #partners-slider .owl-nav .owl-next {
         right: -10px;
+    }
+    .magento-info ul li, .about-us ul li {
+        margin: 0;
     }
 }
 
