@@ -189,7 +189,7 @@ ul.navbar-nav li a {
     margin-bottom: 0;
 }
 
-.options li:before {
+.options li::before {
     content: '\2714';
     color: rgb(255, 163, 3);
 /*
