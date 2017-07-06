@@ -191,6 +191,7 @@ ul.navbar-nav li a {
 
 .options li:before {
     content: '\2714';
+    color: rgb(255, 163, 3);
 /*
     margin-left: -30px;
     color: rgb(255, 163, 3);
