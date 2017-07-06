@@ -955,7 +955,8 @@ footer p {
     }
     
     .certified {
-        right: 20px;
+        right: 10px;
+        bottom: 55px;
     }
     
     #portfolio .ajour,
@@ -982,6 +983,10 @@ footer p {
     #portfolio .dfstore h3,
     #portfolio .dfstore i {
        color: #3B3B3B;
+    }
+    
+    #portfolio .portfolio-content>p {
+        font-size: 20px;
     }
     
     .devops {
@@ -1073,6 +1078,7 @@ footer p {
     
     .certified {
         bottom: 85px;
+        right: 0px;
     }
     
     .navbar-right {
@@ -1266,6 +1272,10 @@ footer p {
         border: none;
     }
     
+    #portfolio .portfolio-content>p {
+        font-size: 16px;
+    }
+    
     .row.content {
         margin-top: 0px;
     }
@@ -1423,6 +1433,11 @@ footer p {
         max-width: 100%;
     }
     
+    .contact-form .phone a {
+        text-decoration: none;
+        color: #333;
+    }
+    
     .contact-form .phone p {
         font-size: 26px;
         line-height: 2.3em;
@@ -1476,7 +1491,7 @@ footer p {
 
 @media screen and (max-width: 609px) {
     
-    #e-commerce .col-uxs-12 div {
+    #e-commerce .col-uxs-12>div {
         padding: 0 85px 0 20px;
         min-height: 165px;
         height: auto;
@@ -1527,7 +1542,7 @@ footer p {
         margin-bottom: 20px;
     }
     
-    #e-commerce .col-uxs-12 div {
+    #e-commerce .col-uxs-12>div {
         padding: 0 50px 0 20px;
         min-height: 165px;
         height: auto;
