@@ -108,6 +108,10 @@ ul.navbar-nav li a {
     font-weight: 700;
 }
 
+.header-info .contacts {
+    display: none;
+}
+
 .content {
     font-size: 0;
     margin-top: 120px;
@@ -187,9 +191,11 @@ ul.navbar-nav li a {
 
 .options li:before {
     content: '\2714';
+/*
     margin-left: -30px;
     color: rgb(255, 163, 3);
     position: absolute;
+*/
 }
 
 .about {
@@ -203,6 +209,10 @@ ul.navbar-nav li a {
 .about span{
     color: rgb(255, 163, 3);
     font-size: 32px;
+}
+
+#portfolio {
+    padding: 60px 0; 
 }
 
 #portfolio .portfolio-content h3 {
@@ -1182,6 +1192,31 @@ footer p {
 
 @media screen and (max-width: 767px) {
     
+    .header-info .contacts {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 150px;
+        transform: translateX(-50%);
+    }
+    
+    .header-info .contacts ul {
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .header-info .contacts ul li {
+        color: rgb(255, 163, 3);
+        display: inline-block;
+        list-style-type: none;
+        font-size: 36px;
+        text-align: center;
+    }
+    .header-info .contacts ul li .fa-skype {
+        margin: 0 23px;
+    }
     #slider-big .item {
         width: 600px;
         height: 325px;
@@ -1503,6 +1538,21 @@ footer p {
 }
 
 @media screen and (max-width: 497px) {
+    
+    .header-info .contacts {
+        top: 20px;
+        width: 100px;
+        transform: translateX(-50%);
+    }
+    
+    .header-info .contacts ul li {
+        font-size: 24px;
+    }
+    
+    .header-info .contacts ul li .fa-skype {
+        margin: 0px 14px;
+    }
+    
     #slider-big {
         min-height: 300px;
         padding: 20px 0;
@@ -1531,6 +1581,10 @@ footer p {
     #portfolio .dfstore, 
     #portfolio .louise {
         min-height: 500px;
+    }
+    
+    #portfolio .portfolio-pref .pref-item {
+        max-width: 84px;
     }
     
     #portfolio .portfolio-content {
