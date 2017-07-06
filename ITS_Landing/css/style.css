@@ -295,6 +295,7 @@ ul.navbar-nav li a {
     border-radius: 5px;
     font-family: Calibri;
     font-size: 16px;
+    background-color: #fff;
 }
 
 #e-commerce .row div>div:hover {
@@ -344,14 +345,21 @@ ul.navbar-nav li a {
     height: 36px;
     background-image: url(../img/arrow-color.svg);
     position: absolute;
-    right: 10px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     border: 0;
 }
 
+    
+#e-commerce {
+    background-color: rgb(243, 243, 243);
+    padding: 60px 0;
+}
+
 #e-commerce .row div>div:hover .arrow {
     background-image: url(../img/arrow-hover.svg);
+    background-color: transparent;
 }
 
 #e-commerce a img {
@@ -362,12 +370,12 @@ ul.navbar-nav li a {
 }
 #e-commerce .devops .arrow {
     position: inherit;
-/*    right: 25px;*/
     margin-top: 40px;
 }
 #team {
     text-align: center;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .team-member {
@@ -767,6 +775,7 @@ button.accordion.active i {
     height: 75px;
     width: 220px;
     background-image: url(../img/partners-sprite.jpg);
+    margin: auto;
 }
 
 #partners-slider .item.loreal {
@@ -775,22 +784,22 @@ button.accordion.active i {
 }
 
 #partners-slider .item.tvoe {
-    background-position: -240px 0px;
+    background-position: -260px 0px;
     width: 180px;
 }
 
 #partners-slider .item.de-bon-ton {
-    background-position: -480px 0px;
+    background-position: -485px 0px;
     width: 230px;
 }
 
 #partners-slider .snow-queen {
-    background-position: -720px 0px;
+    background-position: -745px 0px;
     width: 230px;
 }
 
 #partners-slider .kerastase {
-    background-position: -940px 0px;
+    background-position: -980px 0px;
     width: 230px;
 }
 
@@ -978,7 +987,7 @@ footer p {
     .devops {
         padding-top: 80px;
         padding-right: 40px;
-        height: 410px;
+        height: 470px;
     }
     
     .magento, 
@@ -987,7 +996,7 @@ footer p {
     .wms, 
     .projecting, 
     .mobile-app {
-        height: 195px;
+        height: 225px;
         margin-bottom: 20px;
         position: relative;
         padding-left: 20px;
@@ -1043,9 +1052,18 @@ footer p {
         left: -25px;
     }
     
+    #e-commerce .devops .arrow {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        margin: 0;
+    }
+    
     .magento h3, .erp h3, .pim h3, .wms h3, .projecting h3, .mobile-app h3 {
-    margin-top: 0px;
-}
+        margin-top: 0px;
+    }
     
     .content-right h3, 
     .content-right .options, 
@@ -1118,7 +1136,7 @@ footer p {
     
     #e-commerce .devops,
     #e-commerce .magento {
-        min-height: 195px;
+        min-height: 225px;
         padding-right: 60px;
     }
     
@@ -1335,10 +1353,6 @@ footer p {
         max-height: 165px;
     }
     
-    #e-commerce {
-        background-color: rgb(243, 243, 243);
-    }
-    
     #e-commerce .projecting {
         padding-left: 20px;
         padding-right: 60px;
@@ -1436,7 +1450,7 @@ footer p {
         display: none;
     }
     
-    #e-commerce .col-uxs-12 div {
+    #e-commerce .col-uxs-12> div {
         padding: 0 245px 0 20px;
         min-height: 165px;
         height: auto;
