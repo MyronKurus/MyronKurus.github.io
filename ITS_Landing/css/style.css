@@ -187,9 +187,9 @@ ul.navbar-nav li a {
 
 .options li:before {
     content: '\2714';
-    position: absolute;
     margin-left: -30px;
     color: rgb(255, 163, 3);
+    position: absolute;
 }
 
 .about {
@@ -547,12 +547,19 @@ button.accordion {
     border-radius: 5px;
 }
 
+button.accordion.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 div.panel {
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 button.accordion i {
@@ -586,12 +593,12 @@ button.accordion.active i {
 
 .question-list li:before {
     content: '\2714';
-    position: absolute;
     vertical-align: bottom;
     margin-left: -30px;
     color: rgb(255, 163, 3);
     font-size: 18px;
     font-weight: 700;
+    position: absolute;
 }
 
 
@@ -1035,8 +1042,6 @@ footer p {
     #slider-big .owl-nav .owl-prev {
         left: -25px;
     }
-        
-
     
     .magento h3, .erp h3, .pim h3, .wms h3, .projecting h3, .mobile-app h3 {
     margin-top: 0px;
@@ -1225,6 +1230,10 @@ footer p {
         margin-bottom: 40px;
     }
     
+    #portfolio .dfstore h3{
+        color: rgb(210, 30, 41);
+    }
+    
     #e-commerce {
         padding-bottom: 60px;
     }
@@ -1267,7 +1276,8 @@ footer p {
     }
     
     .price {
-        text-align: center;
+        text-align: left;
+        padding-bottom: 10px;
     }
     
     .content-right h3, 
@@ -1278,6 +1288,14 @@ footer p {
 
     #portfolio .portfolio-content {
         margin-top: 376px;
+    }
+    
+    .portfolio-pref {
+        text-align: center;
+    }
+    
+    #portfolio .portfolio-pref .pref-item {
+        max-width: 96px;
     }
     
     #e-commerce .devops {
@@ -1315,6 +1333,10 @@ footer p {
         padding-left: 20px;
         margin-bottom: 18px;
         max-height: 165px;
+    }
+    
+    #e-commerce {
+        background-color: rgb(243, 243, 243);
     }
     
     #e-commerce .projecting {
@@ -1495,10 +1517,6 @@ footer p {
         padding: 0 50px 0 20px;
         min-height: 165px;
         height: auto;
-    }
-    
-    #portfolio .portfolio-pref .pref-item {
-        max-width: 84px;
     }
     
     #e-commerce .col-uxs-12 div.mobile-app {
